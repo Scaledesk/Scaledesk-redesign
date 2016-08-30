@@ -1,0 +1,253 @@
+
+
+
+
+/*////////Custom Fonts/////////*/
+
+/*//////Gotham/////*/
+
+@font-face{
+    src: url('/fonts/Gotham/Gotham-Black.otf');
+    font-family: 'Gotham-Black' , sans-serif;
+}
+
+@font-face{
+    src: url('/fonts/Gotham/Gotham-Medium.otf');
+    font-family: 'Gotham-Medium' , sans-serif;
+}
+
+
+body{
+    font-family: 'Gotham' , sans-serif;
+
+}
+
+
+.custom-nav{
+    background-color: #f4f4f4!important;
+    border: none;
+    padding: 15px;
+}
+
+
+.custom-nav .navbar-brand{
+    padding: 8px 0 10px 17px;
+}
+
+
+.custom-nav ul li a{
+    font-size: 17px;
+    font-family: 'Gotham-Medium' , sans-serif;
+}
+
+
+
+.intro-section-bg{
+    background: url("../img/scaledesk.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+
+}
+
+
+#intro-section .intro-section-title{
+    text-align: center;
+    background: rgba(249, 242, 235, 0.69);
+    padding: 20px;
+
+}
+
+
+#intro-section .intro-section-title div{
+    font-size: 4.5vw;
+}
+
+
+
+
+
+
+
+/*////////CSS helpers classes*/
+
+
+
+
+/*////Margins//////*/
+
+.m-0{
+    margin: 0!important;
+}
+
+.m-5{
+    margin: 5px!important;
+}
+
+.m-t-0{
+    margin-top: 0!important;
+}
+
+.m-b-0{
+    margin-bottom: 0!important;
+}
+
+.m-10{
+    margin: 10px!important;
+}
+
+.m-t-5{
+    margin-top: 5px!important;
+}
+
+.m-t-10{
+    margin-top: 10px!important;
+}
+
+
+.m-t-20{
+    margin-top: 20px!important;
+}
+
+
+.m-b-5{
+    margin-bottom: 5px!important;
+}
+
+.m-b-10{
+    margin-bottom: 10px!important;
+}
+
+.m-b-20{
+    margin-bottom: 20px!important;
+}
+
+
+.m-b-40{
+    margin-bottom: 40px!important;
+}
+
+.m-t-40{
+    margin-top: 40px!important;
+}
+
+.m-t-60{
+    margin-top: 60px!important;
+}
+
+.m-r-20{
+    margin-right: 20px!important;
+}
+
+
+.m-r-40{
+    margin-right: 40px!important;
+}
+
+.m-30{
+    margin: 30px!important;
+}
+
+/*////Ends here///*/
+
+
+
+
+
+/*///Padding//*/
+
+.p-0{
+    padding: 0!important;
+}
+
+.p-5{
+    padding: 5px!important;
+}
+
+
+.p-10{
+    padding: 10px!important;
+}
+
+.p-t-40{
+    padding-top: 40px!important;
+}
+
+.p-b-40{
+    padding-bottom: 40px!important;
+}
+
+
+/*///ends here////*/
+
+
+
+
+/*////Fonts////*/
+
+
+.f-12{
+    font-size: 12px!important;
+}
+
+
+.f-16{
+    font-size: 16px!important;
+}
+
+.f-17{
+    font-size: 17px!important;
+}
+
+.f-18{
+    font-size: 18px!important;
+}
+
+.f-20{
+    font-size: 20px!important;
+}
+
+.f-22{
+    font-size: 22px!important;
+}
+
+
+.f-24{
+    font-size: 24px!important;
+}
+
+.f-29{
+    font-size: 29px!important;
+}
+
+
+.w-100{
+    font-weight: 100!important;
+}
+
+
+.w-500{
+    font-weight: 500!important;
+}
+
+.w-800{
+    font-weight: 800!important;
+}
+
+
+.f-8{
+    font-size: 5em!important;
+}
+
+
+
+
+
+
+
+/*///ends here///*/
