@@ -30,245 +30,101 @@
 
     /////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <!--<div id="header">-->
-    <!--<div class="logo">-->
-    <!--<a href="#"><img src="img/logo.png" width="150" alt=""></a>-->
-    <!--</div>-->
-
-    <!--<nav>-->
-
-    <!--<ul>-->
-    <!--<li>-->
-    <!--<a href="">Home</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="">About</a>-->
-    <!--<ul class="mega-dropdown">-->
-    <!--<li class="row">-->
-    <!--<ul class="mega-col">-->
-    <!--<li><a href="#">About</a></li>-->
-    <!--<li><a href="#">About</a></li>-->
-    <!--<li><a href="#">Contact</a></li>-->
-    <!--<li><a href="#">Contact</a></li>-->
-    <!--</ul>-->
-    <!--<ul class="mega-col">-->
-    <!--<li><a href="#">Help</a></li>-->
-    <!--<li><a href="#">Pricing</a></li>-->
-    <!--<li><a href="#">Team</a></li>-->
-    <!--<li><a href="#">Services</a></li>-->
-    <!--</ul>-->
-    <!--<ul class="mega-col">-->
-    <!--<li><a href="#">Coming Soon</a></li>-->
-    <!--<li><a href="#">404 Error</a></li>-->
-    <!--<li><a href="#">Search</a></li>-->
-    <!--<li><a href="#">Author Page</a></li>-->
-    <!--</ul>-->
-    <!--<ul class="mega-col">-->
-    <!--<li><a href="#">Full Width</a></li>-->
-    <!--<li><a href="#">Right Column</a></li>-->
-    <!--<li><a href="#">Left Column</a></li>-->
-    <!--<li><a href="#">Maintenance</a></li>-->
-    <!--</ul>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="dropdown">-->
-    <!--<a href="">Contact</a>-->
-    <!--<ul>-->
-    <!--<li><a href="#">About Version</a></li>-->
-    <!--<li><a href="#">About Version</a></li>-->
-    <!--<li><a href="#">Contact Us</a></li>-->
-    <!--<li><a href="#">Contact Us</a></li>-->
-    <!--</ul>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="">Portfolio</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="">Team</a>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</nav>-->
-    <!--</div>-->
-
-
-
     <div id="header-section">
+
+        <header class="cd-main-header">
+            <a class="cd-logo" href="#0"><img src="img/logo.png" width="150" alt="Logo"></a>
+
+            <ul class="cd-header-buttons">
+                <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
+                <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+            </ul> <!-- cd-header-buttons -->
+        </header>
+
+        <main class="cd-main-content">
+            <!-- your content here -->
+        </main>
+
+        <div class="cd-overlay"></div>
+
+        <nav class="cd-nav">
+            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                <li class="has-children">
+                    <a href="#">About Us</a>
+
+                </li>
+
+                <li class="has-children">
+                    <a href="#">Services</a>
+
+                    <ul class="cd-nav-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li class="see-all"><a href="#">See all</a></li>
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/php.svg" width="100" alt="Product Image">
+                                <h4>Web Application Development</h4>
+                                    <p><a href="PHP-CI-Development.html">PHP - CI Development</a></p>
+                                    <p><a href="PHP-LaravelDevelopment.html">PHP LaravelDevelopment</a></p>
+                                    <p><a href="Django-Python-Development.html">Django - Python Development</a></p>
+                                    <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/AngularJS-small.png" width="100" alt="Product Image">
+                                <h4>Mobile App Developmets</h4>
+
+                                <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
+                                <p><a href="Hybrid-Mobile-App-Development.html">Hybrid Mobile App Development</a></p>
+                                <p><a href="Mobile-UI-Design.html">Mobile UI Design</a></p>
+                                <p><a href="iOS-App-development.html">iOS App development</a></p>
+                                <p><a href="App-Launch-strategy-&-ASO.html">App Launch strategy & ASO</a></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/wireframes.svg" width="100" alt="Product Image">
+                                <h4>Design & HTML Development</h4>
+                                <p><a href="Responsive-WEb-Page-Development.html">Responsive WEb Page Development</a></p>
+                                <p><a href="MultiPage-WEbsite-Development.html">MultiPage WEbsite Development</a></p>
+                                <p><a href="Custom-Web-Page-Design.html">Custom Web Page Design</a></p>
+                                <p><a href="Mobile-UI-UX.html">Mobile UI / UX </a></p>
+                                <p><a href="Website-UI-UX.html">Website UI / UX </a></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/img.jpg" alt="Product Image">
+                                <h4>e-Commerce Development</h4>
+                                <p><a href="Wordpress-e-Commerce-Development.html">Wordpress e-Commerce Development</a></p>
+                                <p><a href="#">MAgento e-Comm Development</a></p>
+                                <p><a href="#">Shopify e-Commerce SOlution</a></p>
+                                <p><a href="#">Custom e-Commerce Development</a></p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-children">
+                    <a href="#">Our-process</a>
+
+                </li>
+
+                <li><a href="#">Careers</a></li>
+
+
+                <li><a href="#">Contact us</a></li>
+
+            </ul> <!-- primary-nav -->
+        </nav> <!-- cd-nav -->
+
         <!--------------------->
         <!---------------------------->
-
-        <div class="uk-container uk-container-center m-0">
-            <nav class="uk-navbar custom-nav">
-
-                <ul class="uk-navbar-nav uk-hidden-small">
-                    <a href="index.html" class="uk-navbar-brand uk-hidden-small"><img src="img/logo.png" width="150" alt=""></a>
-
-                </ul>
-
-                <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip ">
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="our-process.html">Our process</a></li>
-
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <li><a href="PHP-CI-Development.html">PHP - CI Development</a></li>
-                                <li><a href="PHP-LaravelDevelopment.html">PHP LaravelDevelopment</a></li>
-                                <li><a href="Django-Python-Development.html">Django - Python Development</a></li>
-                                <li><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></li>
-                                <li><a href="Hybrid-Mobile-App-Development.html">Hybrid Mobile App Development</a></li>
-                                <li><a href="Mobile-UI-Design.html">Mobile UI Design</a></li>
-                                <li><a href="iOS-App-development.html">iOS App development</a></li>
-                                <li><a href="App-Launch-strategy-&-ASO.html">App Launch strategy & ASO</a></li>
-                                <li><a href="Responsive-WEb-Page-Development.html">Responsive WEb Page Development</a></li>
-                                <li><a href="MultiPage-WEbsite-Development.html">MultiPage WEbsite Development</a></li>
-                                <li><a href="Custom-Web-Page-Design.html">Custom Web Page Design</a></li>
-                                <li><a href="Mobile-UI-UX.html">Mobile UI / UX </a></li>
-                                <li><a href="Website-UI-UX.html">Website UI / UX </a></li>
-                                <li><a href="Wordpress-e-Commerce-Development.html">Wordpress e-Commerce Development</a></li>
-                                <!--<li><a href="#">MAgento e-Comm Development</a></li>-->
-                                <!--<li><a href="#">Shopify e-Commerce SOlution</a></li>-->
-                                <!--<li><a href="#">Custom e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">Wordpress CMS development</a></li>-->
-                                <!--<li><a href="#">Custom CMS development</a></li>-->
-                                <!--<li><a href="#">CMS Support & Maintennance Service</a></li>-->
-                                <!--<li><a href="#">CMS Documentation Service</a></li>-->
-                                <!--<li><a href="#">MEAN Stack e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">PPC Marketing Services</a></li>-->
-                                <!--<li><a href="#">Digital Marketing Services</a></li>-->
-                                <!--<li><a href="#">AWS Manangement & Handling</a></li>-->
-                                <!--<li><a href="#">Maintenance & Support Services</a></li>-->
-                                <!--<li><a href="#">Technical Staffing</a></li>-->
-                                <!--<li><a href="#">Technical Consulting </a></li>-->
-                                <!--<li><a href="#">SEO Services</a></li>-->
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-                    <!--<li class="static"><a href="#" class="my-menu">Features</a>-->
-                        <!--<div class="menu-open">-->
-                                    <!--<p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus in perferendis temporibus? Asperiores atque, consequuntur dignissimos dolorem est ex laboriosam modi mollitia optio, perferendis quo rem sapiente veritatis vero vitae.</p>-->
-
-                        <!--</div>-->
-
-                    <!--</li>-->
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <!--<li><a href="#">PHP - CI Development</a></li>-->
-                                <!--<li><a href="#">PHP LaravelDevelopment</a></li>-->
-                                <!--<li><a href="">Django - Python Development</a></li>-->
-                                <!--<li><a href="#">AngularJS SPA Development</a></li>-->
-                                <!--<li><a href="#">Hybrid Mobile App Development</a></li>-->
-                                <!--<li><a href="">Mobile UI Design</a></li>-->
-                                <!--<li><a href="#">iOS App development</a></li>-->
-                                <!--<li><a href="#">App Launch strategy & ASO</a></li>-->
-                                <!--<li><a href="#">Responsive WEb Page Development</a></li>-->
-                                <!--<li><a href="#">MultiPage WEbsite Development</a></li>-->
-                                <!--<li><a href="#">Custom Web Page Design</a></li>-->
-                                <!--<li><a href="#">Mobile UI / UX </a></li>-->
-                                <!--<li><a href="#">Website UI / UX </a></li>-->
-                                <!--<li><a href="#">Wordpress e-Commerce Development</a></li>-->
-                                <li><a href="Magento-E-Comm-Development.html">MAgento e-Comm Development</a></li>
-                                <li><a href="Shopify-E-Commerce-Solution.html">Shopify e-Commerce SOlution</a></li>
-                                <li><a href="Custom-E-Commerce-Development.html">Custom e-Commerce Development</a></li>
-                                <li><a href="Wordpress-CMS-development.html">Wordpress CMS development</a></li>
-                                <li><a href="Custom-CMS-development.html">Custom CMS development</a></li>
-                                <li><a href="CMS-Support-&-Maintennance-Service.html">CMS Support & Maintennance Service</a></li>
-                                <li><a href="CMS-Documentation-Service.html">CMS Documentation Service</a></li>
-                                <li><a href="MEAN-Stack-E-Commerce-Development.html">MEAN Stack e-Commerce Development</a></li>
-                                <li><a href="PPC-Marketing-Services.html">PPC Marketing Services</a></li>
-                                <li><a href="Digital-Marketing-Services.html">Digital Marketing Services</a></li>
-                                <li><a href="AWS-Manangement-&-Handling.html">AWS Manangement & Handling</a></li>
-                                <li><a href="Maintenance-&-Support-Services.html">Maintenance & Support Services</a></li>
-                                <!--<li><a href="#">Technical Staffing</a></li>-->
-                                <!--<li><a href="#">Technical Consulting </a></li>-->
-                                <!--<li><a href="#">SEO Services</a></li>-->
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <!--<li><a href="#">PHP - CI Development</a></li>-->
-                                <!--<li><a href="#">PHP LaravelDevelopment</a></li>-->
-                                <!--<li><a href="">Django - Python Development</a></li>-->
-                                <!--<li><a href="#">AngularJS SPA Development</a></li>-->
-                                <!--<li><a href="#">Hybrid Mobile App Development</a></li>-->
-                                <!--<li><a href="">Mobile UI Design</a></li>-->
-                                <!--<li><a href="#">iOS App development</a></li>-->
-                                <!--<li><a href="#">App Launch strategy & ASO</a></li>-->
-                                <!--<li><a href="#">Responsive WEb Page Development</a></li>-->
-                                <!--<li><a href="#">MultiPage WEbsite Development</a></li>-->
-                                <!--<li><a href="#">Custom Web Page Design</a></li>-->
-                                <!--<li><a href="#">Mobile UI / UX </a></li>-->
-                                <!--<li><a href="#">Website UI / UX </a></li>-->
-                                <!--<li><a href="#">Wordpress e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">MAgento e-Comm Development</a></li>-->
-                                <!--<li><a href="#">Shopify e-Commerce SOlution</a></li>-->
-                                <!--<li><a href="#">Custom e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">Wordpress CMS development</a></li>-->
-                                <!--<li><a href="#">Custom CMS development</a></li>-->
-                                <!--<li><a href="#">CMS Support & Maintennance Service</a></li>-->
-                                <!--<li><a href="#">CMS Documentation Service</a></li>-->
-                                <!--<li><a href="#">MEAN Stack e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">PPC Marketing Services</a></li>-->
-                                <!--<li><a href="#">Digital Marketing Services</a></li>-->
-                                <!--<li><a href="#">AWS Manangement & Handling</a></li>-->
-                                <!--<li><a href="#">Maintenance & Support Services</a></li>-->
-                                <li><a href="Technical-Staffing.html">Technical Staffing</a></li>
-                                <li><a href="Technical-Consulting.html">Technical Consulting </a></li>
-                                <li><a href="SEO-Services.html">SEO Services</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-
-
-                <!---Mobile Navbar-->
-
-                <a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-                <div class="uk-navbar-brand uk-navbar-center uk-visible-small">
-                    <a href=""><img src="img/logo.png" width="150" alt=""></a>
-
-                </div>
-
-                <div id="my-id" class="uk-offcanvas">
-                    <ul class="uk-offcanvas-bar	">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-
-                    </ul>
-
-
-                </div>
-
-            </nav>
-
-        </div>
 
     </div>
 
@@ -822,6 +678,7 @@ Fab Button
 
 
 <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 
 
 <script>

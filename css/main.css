@@ -1,4 +1,5 @@
-@import "faq.css";
+/*@import "faq.css";*/
+@import "menu.css";
 
 *{
     -webkit-box-sizing: border-box;
@@ -95,7 +96,7 @@ section:not(:first-of-type){
 #header-section{
     position: fixed;
     display: block;
-    width: 100%;
+    width: 92%;
     box-sizing: border-box;
     background-color: #fff;
     z-index: 100;
@@ -904,6 +905,7 @@ Contact us page
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    padding-top: 100px;
 }
 
 .careers-txt{
@@ -926,6 +928,11 @@ Contact us page
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
 }
 
+
+.o-position-card{
+    padding: 20px;
+    background-color: #f5f5f5;
+}
 
 
 
@@ -955,6 +962,26 @@ Contact us page
     font-weight: 700;
 }
 
+.service-card{
+    padding: 40px 20px;
+    background: rgba(158, 158, 158, 0.13);
+    height: 340px;
+}
+
+
+.service-card ul li{
+    margin: 15px 0;
+}
+
+
+.service-card:last-child{
+    margin-bottom: 30px;
+}
+
+
+.service-card img{
+    margin-right: 10px;
+}
 
 
 
@@ -1631,20 +1658,23 @@ Contact us page
 .my-menu:hover + .menu-open{
     display: block;
     background-color: #f5f5f5;
-    width: 54%;
-    height: 600px;
+    /*width: 54%;*/
+    height: 400px;
     box-sizing: border-box;
     position: absolute;
     right: 122px;
     padding: 20px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1000000000000;
+
+
 }
 
 .menu-open{
     display: none;
     position: relative;
     cursor: pointer!important;
+
 }
 
 
