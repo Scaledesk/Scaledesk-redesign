@@ -31,181 +31,96 @@
     /////////////////////////////////////////////////////////////////////////////////////////-->
 
     <div id="header-section">
+
+        <header class="cd-main-header">
+            <a class="cd-logo" href="index.html"><img src="img/logo.png" width="150" alt="Logo"></a>
+
+            <ul class="cd-header-buttons">
+                <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
+                <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+            </ul> <!-- cd-header-buttons -->
+        </header>
+
+        <main class="cd-main-content">
+            <!-- your content here -->
+        </main>
+
+        <div class="cd-overlay"></div>
+
+        <nav class="cd-nav">
+            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                <li class="has-children">
+                    <a href="about-us.html">About Us</a>
+
+                </li>
+
+                <li class="has-children">
+                    <a href="services.html">Services <i class="fa fa-angle-down"></i></a>
+
+                    <ul class="cd-nav-gallery is-hidden">
+                        <li class="go-back"><a href="#0"></a></li>
+                        <li class="see-all"><a href="">See all</a></li>
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/php.svg" width="100" alt="Product Image" class="uk-hidden">
+                                <h4>Web Application Development</h4>
+                                <p><a href="PHP-CI-Development.html">PHP - CI Development</a></p>
+                                <p><a href="PHP-LaravelDevelopment.html">PHP LaravelDevelopment</a></p>
+                                <p><a href="Django-Python-Development.html">Django - Python Development</a></p>
+                                <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/AngularJS-small.png" width="100" alt="Product Image" class="uk-hidden">
+                                <h4>Mobile App Developmets</h4>
+
+                                <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
+                                <p><a href="Hybrid-Mobile-App-Development.html">Hybrid Mobile App Development</a></p>
+                                <p><a href="Mobile-UI-Design.html">Mobile UI Design</a></p>
+                                <p><a href="iOS-App-development.html">iOS App development</a></p>
+                                <p><a href="App-Launch-strategy-&-ASO.html">App Launch strategy & ASO</a></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/wireframes.svg" width="100" alt="Product Image" class="uk-hidden">
+                                <h4>Design & HTML Development</h4>
+                                <p><a href="Responsive-WEb-Page-Development.html">Responsive WEb Page Development</a></p>
+                                <p><a href="MultiPage-WEbsite-Development.html">MultiPage WEbsite Development</a></p>
+                                <p><a href="Custom-Web-Page-Design.html">Custom Web Page Design</a></p>
+                                <p><a href="Mobile-UI-UX.html">Mobile UI / UX </a></p>
+                                <p><a href="Website-UI-UX.html">Website UI / UX </a></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="cd-nav-item" href="#">
+                                <img src="img/img.jpg" alt="Product Image" class="uk-hidden">
+                                <h4>e-Commerce Development</h4>
+                                <p><a href="Wordpress-e-Commerce-Development.html">Wordpress e-Commerce Development</a></p>
+                                <p><a href="#">MAgento e-Comm Development</a></p>
+                                <p><a href="#">Shopify e-Commerce SOlution</a></p>
+                                <p><a href="#">Custom e-Commerce Development</a></p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="our-process.html">Our-process</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul> <!-- primary-nav -->
+        </nav> <!-- cd-nav -->
+
         <!--------------------->
         <!---------------------------->
-
-        <div class="uk-container uk-container-center m-0">
-            <nav class="uk-navbar custom-nav">
-
-                <ul class="uk-navbar-nav uk-hidden-small">
-                    <a href="index.html" class="uk-navbar-brand uk-hidden-small"><img src="img/logo.png" width="150" alt=""></a>
-
-                </ul>
-
-                <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip ">
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="our-process.html">Our process</a></li>
-
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <li><a href="PHP-CI-Development.html">PHP - CI Development</a></li>
-                                <li><a href="PHP-LaravelDevelopment.html">PHP LaravelDevelopment</a></li>
-                                <li><a href="Django-Python-Development.html">Django - Python Development</a></li>
-                                <li><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></li>
-                                <li><a href="Hybrid-Mobile-App-Development.html">Hybrid Mobile App Development</a></li>
-                                <li><a href="Mobile-UI-Design.html">Mobile UI Design</a></li>
-                                <li><a href="iOS-App-development.html">iOS App development</a></li>
-                                <li><a href="App-Launch-strategy-&-ASO.html">App Launch strategy & ASO</a></li>
-                                <li><a href="Responsive-WEb-Page-Development.html">Responsive WEb Page Development</a></li>
-                                <li><a href="MultiPage-WEbsite-Development.html">MultiPage WEbsite Development</a></li>
-                                <li><a href="Custom-Web-Page-Design.html">Custom Web Page Design</a></li>
-                                <li><a href="Mobile-UI-UX.html">Mobile UI / UX </a></li>
-                                <li><a href="Website-UI-UX.html">Website UI / UX </a></li>
-                                <li><a href="Wordpress-e-Commerce-Development.html">Wordpress e-Commerce Development</a></li>
-                                <!--<li><a href="#">MAgento e-Comm Development</a></li>-->
-                                <!--<li><a href="#">Shopify e-Commerce SOlution</a></li>-->
-                                <!--<li><a href="#">Custom e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">Wordpress CMS development</a></li>-->
-                                <!--<li><a href="#">Custom CMS development</a></li>-->
-                                <!--<li><a href="#">CMS Support & Maintennance Service</a></li>-->
-                                <!--<li><a href="#">CMS Documentation Service</a></li>-->
-                                <!--<li><a href="#">MEAN Stack e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">PPC Marketing Services</a></li>-->
-                                <!--<li><a href="#">Digital Marketing Services</a></li>-->
-                                <!--<li><a href="#">AWS Manangement & Handling</a></li>-->
-                                <!--<li><a href="#">Maintenance & Support Services</a></li>-->
-                                <!--<li><a href="#">Technical Staffing</a></li>-->
-                                <!--<li><a href="#">Technical Consulting </a></li>-->
-                                <!--<li><a href="#">SEO Services</a></li>-->
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-                    <!--<li class="static"><a href="#" class="my-menu">Features</a>-->
-                    <!--<div class="menu-open">-->
-                    <!--<p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus in perferendis temporibus? Asperiores atque, consequuntur dignissimos dolorem est ex laboriosam modi mollitia optio, perferendis quo rem sapiente veritatis vero vitae.</p>-->
-
-                    <!--</div>-->
-
-                    <!--</li>-->
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <!--<li><a href="#">PHP - CI Development</a></li>-->
-                                <!--<li><a href="#">PHP LaravelDevelopment</a></li>-->
-                                <!--<li><a href="">Django - Python Development</a></li>-->
-                                <!--<li><a href="#">AngularJS SPA Development</a></li>-->
-                                <!--<li><a href="#">Hybrid Mobile App Development</a></li>-->
-                                <!--<li><a href="">Mobile UI Design</a></li>-->
-                                <!--<li><a href="#">iOS App development</a></li>-->
-                                <!--<li><a href="#">App Launch strategy & ASO</a></li>-->
-                                <!--<li><a href="#">Responsive WEb Page Development</a></li>-->
-                                <!--<li><a href="#">MultiPage WEbsite Development</a></li>-->
-                                <!--<li><a href="#">Custom Web Page Design</a></li>-->
-                                <!--<li><a href="#">Mobile UI / UX </a></li>-->
-                                <!--<li><a href="#">Website UI / UX </a></li>-->
-                                <!--<li><a href="#">Wordpress e-Commerce Development</a></li>-->
-                                <li><a href="Magento-E-Comm-Development.html">MAgento e-Comm Development</a></li>
-                                <li><a href="Shopify-E-Commerce-Solution.html">Shopify e-Commerce SOlution</a></li>
-                                <li><a href="Custom-E-Commerce-Development.html">Custom e-Commerce Development</a></li>
-                                <li><a href="Wordpress-CMS-development.html">Wordpress CMS development</a></li>
-                                <li><a href="Custom-CMS-development.html">Custom CMS development</a></li>
-                                <li><a href="CMS-Support-&-Maintennance-Service.html">CMS Support & Maintennance Service</a></li>
-                                <li><a href="CMS-Documentation-Service.html">CMS Documentation Service</a></li>
-                                <li><a href="MEAN-Stack-E-Commerce-Development.html">MEAN Stack e-Commerce Development</a></li>
-                                <li><a href="PPC-Marketing-Services.html">PPC Marketing Services</a></li>
-                                <li><a href="Digital-Marketing-Services.html">Digital Marketing Services</a></li>
-                                <li><a href="AWS-Manangement-&-Handling.html">AWS Manangement & Handling</a></li>
-                                <li><a href="Maintenance-&-Support-Services.html">Maintenance & Support Services</a></li>
-                                <!--<li><a href="#">Technical Staffing</a></li>-->
-                                <!--<li><a href="#">Technical Consulting </a></li>-->
-                                <!--<li><a href="#">SEO Services</a></li>-->
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="uk-parent uk-active" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
-                        <a href="services.html">Services</a>
-
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <!--<li><a href="#">PHP - CI Development</a></li>-->
-                                <!--<li><a href="#">PHP LaravelDevelopment</a></li>-->
-                                <!--<li><a href="">Django - Python Development</a></li>-->
-                                <!--<li><a href="#">AngularJS SPA Development</a></li>-->
-                                <!--<li><a href="#">Hybrid Mobile App Development</a></li>-->
-                                <!--<li><a href="">Mobile UI Design</a></li>-->
-                                <!--<li><a href="#">iOS App development</a></li>-->
-                                <!--<li><a href="#">App Launch strategy & ASO</a></li>-->
-                                <!--<li><a href="#">Responsive WEb Page Development</a></li>-->
-                                <!--<li><a href="#">MultiPage WEbsite Development</a></li>-->
-                                <!--<li><a href="#">Custom Web Page Design</a></li>-->
-                                <!--<li><a href="#">Mobile UI / UX </a></li>-->
-                                <!--<li><a href="#">Website UI / UX </a></li>-->
-                                <!--<li><a href="#">Wordpress e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">MAgento e-Comm Development</a></li>-->
-                                <!--<li><a href="#">Shopify e-Commerce SOlution</a></li>-->
-                                <!--<li><a href="#">Custom e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">Wordpress CMS development</a></li>-->
-                                <!--<li><a href="#">Custom CMS development</a></li>-->
-                                <!--<li><a href="#">CMS Support & Maintennance Service</a></li>-->
-                                <!--<li><a href="#">CMS Documentation Service</a></li>-->
-                                <!--<li><a href="#">MEAN Stack e-Commerce Development</a></li>-->
-                                <!--<li><a href="#">PPC Marketing Services</a></li>-->
-                                <!--<li><a href="#">Digital Marketing Services</a></li>-->
-                                <!--<li><a href="#">AWS Manangement & Handling</a></li>-->
-                                <!--<li><a href="#">Maintenance & Support Services</a></li>-->
-                                <li><a href="Technical-Staffing.html">Technical Staffing</a></li>
-                                <li><a href="Technical-Consulting.html">Technical Consulting </a></li>
-                                <li><a href="SEO-Services.html">SEO Services</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-
-
-                <!---Mobile Navbar-->
-
-                <a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-                <div class="uk-navbar-brand uk-navbar-center uk-visible-small">
-                    <a href=""><img src="img/logo.png" width="150" alt=""></a>
-
-                </div>
-
-                <div id="my-id" class="uk-offcanvas">
-                    <ul class="uk-offcanvas-bar	">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-
-                    </ul>
-
-
-                </div>
-
-            </nav>
-
-        </div>
 
     </div>
 
@@ -241,100 +156,164 @@
 
     <section id="portfolio-section">
         <div class="uk-container uk-container-center">
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-2">
-                    <img src="img/company-img.svg" alt="" width="100%">
+            <div class="uk-grid portfolio-container zolo-bg">
+                    <div class="uk-width-medium-1-2">
+                        <img src="img/zolo.jpg" alt="" width="100%">
+                        <ul class="tech-use">
+                            <h3>Technology Used</h3>
 
-                </div>
+                            <li><a href=""><img src="img/angular.png" alt=""></a></li>
+                            <li><a href=""><img src="img/laravel.png" alt=""></a></li>
+                            <li><a href=""><img src="img/bootstrap.png" width="30" alt=""></a></li>
+                            <li><a href=""><img src="img/jquery.png" width="30" alt=""></a></li>
+                            <li><a href=""><img src="img/algolia.ico" width="30" alt=""></a></li>
+                        </ul>
+                    </div>
 
-                <div class="uk-width-medium-1-2">
-                    <div class="company-about">
-                        <p>Zolo is India's first marketplace for on-demand talent where you can discover thousands of talented people ready to help you get anything done.
+                    <div class="uk-width-medium-1-2">
+                        <div class="company-about">
+                            <h3 class="zolo-c"> Zolo Technologies Pvt. Ltd</h3>
+                            <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div>
+                                <a href="" class="portfolio-view-btn zolo-bg zolo-c">See Website</a>
+                            </div>
 
-                            Imagine having an army of people with a variety of 'specialized skills & talent' ready to help you complete your to-do list, finish your projects, solve any problem and accomplish your big goals in life. Soon Zolo will have over 200,000 independent professionals in over 500+ categories across 50 cities in India sharing their talent, skills & services with you.
 
-                            Zolo is one of the rare digital companies which is positioning itself for global success by enabling freelancers from all walks of life to build a business around their passion.</p>
+
+                        </div>
                     </div>
                 </div>
 
+
+
+
+            <div class="uk-grid portfolio-container mandigate-bg">
+
+
+                <div class="uk-width-medium-1-2">
+                    <div class="company-about">
+                        <h3 class="mandigate-c">MANDIGATE</h3>
+
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div>
+                            <a href="" class="portfolio-view-btn mandigate-bg mandigate-c">See Website</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <img src="img/mandigate.jpg" alt="" width="100%">
+                    <ul class="tech-use-mandigate">
+                        <li><a href=""><img src="img/django.png" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                    </ul>
+                </div>
 
             </div>
 
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-2">
-                    <img src="img/company-img.svg" alt="" width="100%">
 
+            <div class="uk-grid portfolio-container shaleena-bg">
+                <div class="uk-width-medium-1-2">
+                    <img src="img/shaleena.jpg" alt="" width="100%">
+                    <ul class="tech-use">
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                    </ul>
                 </div>
 
                 <div class="uk-width-medium-1-2">
                     <div class="company-about">
-                        <p>Zolo is India's first marketplace for on-demand talent where you can discover thousands of talented people ready to help you get anything done.
-
-                            Imagine having an army of people with a variety of 'specialized skills & talent' ready to help you complete your to-do list, finish your projects, solve any problem and accomplish your big goals in life. Soon Zolo will have over 200,000 independent professionals in over 500+ categories across 50 cities in India sharing their talent, skills & services with you.
-
-                            Zolo is one of the rare digital companies which is positioning itself for global success by enabling freelancers from all walks of life to build a business around their passion.</p>
+                        <h3 class="shaleena-c"> Shaleena Nownuth</h3>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div>
+                            <a href="" class="portfolio-view-btn shaleena-bg shaleena-c">See Website</a>
+                        </div>
                     </div>
                 </div>
-
-
-            </div>
-
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-2">
-                    <img src="img/company-img.svg" alt="" width="100%">
-
-                </div>
-
-                <div class="uk-width-medium-1-2">
-                    <div class="company-about">
-                        <p>Zolo is India's first marketplace for on-demand talent where you can discover thousands of talented people ready to help you get anything done.
-
-                            Imagine having an army of people with a variety of 'specialized skills & talent' ready to help you complete your to-do list, finish your projects, solve any problem and accomplish your big goals in life. Soon Zolo will have over 200,000 independent professionals in over 500+ categories across 50 cities in India sharing their talent, skills & services with you.
-
-                            Zolo is one of the rare digital companies which is positioning itself for global success by enabling freelancers from all walks of life to build a business around their passion.</p>
-                    </div>
-                </div>
-
-
             </div>
 
 
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-2">
-                    <img src="img/company-img.svg" alt="" width="100%">
+            <div class="uk-grid portfolio-container rewello-bg">
 
-                </div>
 
                 <div class="uk-width-medium-1-2">
                     <div class="company-about">
-                        <p>Zolo is India's first marketplace for on-demand talent where you can discover thousands of talented people ready to help you get anything done.
+                        <h3 class="rewello-c">REWELLO</h3>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div>
+                            <a href="" class="portfolio-view-btn rewello-c rewello-bg">See Website</a>
+                        </div>
 
-                            Imagine having an army of people with a variety of 'specialized skills & talent' ready to help you complete your to-do list, finish your projects, solve any problem and accomplish your big goals in life. Soon Zolo will have over 200,000 independent professionals in over 500+ categories across 50 cities in India sharing their talent, skills & services with you.
-
-                            Zolo is one of the rare digital companies which is positioning itself for global success by enabling freelancers from all walks of life to build a business around their passion.</p>
                     </div>
                 </div>
 
+
+                <div class="uk-width-medium-1-2">
+                    <img src="img/rewello.jpg" alt="" width="100%">
+                    <ul class="tech-use">
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                    </ul>
+                </div>
 
             </div>
 
-            <div class="uk-grid">
+            <div class="uk-grid portfolio-container Stealnoire-bg">
                 <div class="uk-width-medium-1-2">
-                    <img src="img/company-img.svg" alt="" width="100%">
-
+                    <img src="img/Stealnoire.png" alt="" width="100%">
+                    <ul class="tech-use">
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                        <li><a href=""><img src="img" alt=""></a></li>
+                    </ul>
                 </div>
 
                 <div class="uk-width-medium-1-2">
-                    <div class="company-about">
-                        <p>Zolo is India's first marketplace for on-demand talent where you can discover thousands of talented people ready to help you get anything done.
+                    <div class="company-about c-black">
+                        <h3>Stealnoire</h3>
 
-                            Imagine having an army of people with a variety of 'specialized skills & talent' ready to help you complete your to-do list, finish your projects, solve any problem and accomplish your big goals in life. Soon Zolo will have over 200,000 independent professionals in over 500+ categories across 50 cities in India sharing their talent, skills & services with you.
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="fa fa-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div>
+                            <a href="" class="portfolio-view-btn stealnoire-bg shaleena-c">See Website</a>
+                        </div>
 
-                            Zolo is one of the rare digital companies which is positioning itself for global success by enabling freelancers from all walks of life to build a business around their passion.</p>
                     </div>
                 </div>
-
-
             </div>
 
 
@@ -449,6 +428,15 @@ Fab Button
     </a>
 </nav>
 
+
+
+<!--Back to top-->
+
+<a href="#0" class="cd-top">To Top</a>
+
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 
 <script>
     $(document).ready (function(){
