@@ -1,0 +1,74 @@
+
+.mdal-btn{
+    border: 2px solid #00C7FA;
+    color:#00C7FA;
+    cursor:pointer;
+    height:35px;
+    width:100px;
+
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+.mdal-btn:hover{
+    background-color:#00C7FA;
+    color:#fff;
+}
+
+.contact-strip{
+
+    background-color: #7F7575;
+    padding: 20px;
+}
+ .bg-intro
+ {
+     background: rgba(249, 242, 235, 0.27);
+     PADDING: 30PX;
+ }
+.f-color{
+    color:#2BB6E4;
+}
+
+
+
+
+#contact-modal-section{
+    background: url('../img/clouds.png') center no-repeat;
+    background-position: 0% 50%;
+    height: 666px;
+    padding-top: 13%;
+}
+
+
+.form-title{
+    font-size: 30px;
+    color: #565a5c;
+    text-align: center;
+}
+
+
+#contact-modal-section .form-group{
+    margin: 20px 0;
+}
+
+
+#contact-modal-section .form-group input{
+    padding: 20px;
+    background-color: transparent;
+    width: 60%;
+    box-sizing: border-box;
+
+}
+
+
+#contact-modal-section.form-group.submit-btn{
+    width: 60%;
+    background-color: #2BB6E4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+

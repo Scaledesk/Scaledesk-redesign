@@ -179,12 +179,17 @@ section:first-of-type{
 
 /////////////////////////////////////////////////////////////////////////*/
 
-
+/*
 #intro-section{
     padding-top: 90px;
 
+}*/
+.introsection{
+    background: url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
+    background-position: 0% 50%;
+    height: 666px;
+    padding-top: 13%;
 }
-
 
 .intro-section-bg{
     background-size: cover;
@@ -208,7 +213,8 @@ section:first-of-type{
 
 #intro-section .intro-section-title{
     text-align: center;
-    background: rgba(249, 242, 235, 0.27);
+   /* background: rgba(249, 242, 235, 0.27);*/
+    background: rgba(255, 255, 255, 0.74);
     padding: 20px;
 
 }
@@ -218,7 +224,42 @@ section:first-of-type{
     font-size: 2.5vw;
     margin: 30px;
 }
+/*custom by garima */
 
+
+
+
+.form-title{
+    font-size: 30px;
+    color: #565a5c;
+    text-align: center;
+}
+
+
+#intro-section .form-group{
+    margin: 20px 0;
+}
+
+
+#intro-section .form-group input{
+    padding: 20px;
+    background-color: transparent;
+    width: 60%;
+    box-sizing: border-box;
+
+}
+
+
+#intro-section .form-group .submit-btn{
+    width: 60%;
+    background-color: #2BB6E4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+/*custom end by garima*/
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -1351,6 +1392,8 @@ Contact us page
     margin: 0!important;
 }
 
+
+
 .m-5{
     margin: 5px!important;
 }
@@ -1383,6 +1426,9 @@ Contact us page
     margin-top: 20px!important;
 }
 
+.m-t-30{
+    margin-top: 30px!important;
+}
 
 .m-b-5{
     margin-bottom: 5px!important;
@@ -1420,6 +1466,10 @@ Contact us page
 
 .m-r-40{
     margin-right: 40px!important;
+}
+
+.m-l-4{
+    margin-left:4px;
 }
 
 .m-30{
