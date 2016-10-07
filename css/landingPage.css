@@ -34,6 +34,46 @@
 
 
 
+
+#contact-form1-section{
+    background: url('../img/clouds.png') center no-repeat;
+    background-position: 0% 50%;
+    height: 666px;
+    padding-top: 13%;
+}
+
+
+.form-title{
+    font-size: 30px;
+    color: #565a5c;
+    text-align: center;
+}
+
+
+#contact-form1-section .form-group{
+    margin: 20px 0;
+}
+
+
+#contact-form1-section .form-group input{
+    padding: 20px;
+    background-color: transparent;
+    width: 60%;
+    box-sizing: border-box;
+
+}
+
+
+#contact-form1-section.form-group.submit-btn{
+    width: 60%;
+    background-color: #2BB6E4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+
 #contact-modal-section{
     background: url('../img/clouds.png') center no-repeat;
     background-position: 0% 50%;
