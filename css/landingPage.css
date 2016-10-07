@@ -4,7 +4,7 @@
     color:#00C7FA;
     cursor:pointer;
     height:35px;
-    width:100px;
+    width:120px;
 
     border-radius: 4px;
     background-color: #fff;
@@ -72,3 +72,16 @@
 
 }
 
+.m-t-100{
+    margin-top: 100px;
+}
+
+#footer-section.footer-social-icons li{
+   list-style-type: none;
+    display: inline-block;
+
+}
+#footer-section.footer-social-icons li a{
+   font-size
+
+}

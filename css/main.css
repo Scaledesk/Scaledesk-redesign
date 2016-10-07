@@ -204,7 +204,7 @@ section:first-of-type{
     -moz-align-items: center;
     -o-align-items: center;
     align-items: center;
-    margin-top: -60px;
+ /*   margin-top: -60px;*/
 
 
 
