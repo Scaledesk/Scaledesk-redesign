@@ -185,10 +185,12 @@ section:first-of-type{
 
 }*/
 .introsection{
-    background: url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
-    background-position: 0% 50%;
+    background: #CED4D4 url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
+    /*background-position: 0% 50%;*/
     height: 666px;
     padding-top: 13%;
+    background-size: cover;
+
 }
 
 .intro-section-bg{
@@ -214,7 +216,7 @@ section:first-of-type{
 #intro-section .intro-section-title{
     text-align: center;
    /* background: rgba(249, 242, 235, 0.27);*/
-    background: rgba(255, 255, 255, 0.74);
+   /* background: rgba(255, 255, 255, 0.74);*/
     padding: 20px;
 
 }
@@ -1206,7 +1208,7 @@ Contact us page
 
 
 .service-bg{
-    background: url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
+    background: #CED4D4 url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
     width: 100%;
     height: 600px;
     background-size: cover;

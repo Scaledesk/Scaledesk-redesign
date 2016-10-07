@@ -85,3 +85,16 @@
    font-size
 
 }
+
+
+.fold-form-title{
+    font-size: 25px;
+    color: #565a5c;
+    text-align: center;
+}
+
+.form-bg{
+    background: rgba(255, 255, 255, 0.74);
+    padding: 20px;
+    height: 410px;
+}
