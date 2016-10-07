@@ -138,3 +138,18 @@
     padding: 20px;
     height: 410px;
 }
+
+
+.title::after{
+    display: block;
+    margin: 20px auto 10px;
+    width: 10%;
+    height: 4px;
+    background-color: #8cdfff;
+    background-color: rgba(140,223,255,.8);
+    content: '';
+    line-height: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
