@@ -30,6 +30,9 @@
 .f-color{
     color:#2BB6E4;
 }
+.f-16{
+    font-size: 16px;
+}
 
 
 
@@ -121,9 +124,12 @@
     display: inline-block;
 
 }
-#footer-section.footer-social-icons li a{
-   font-size
-
+.footer-sub-section-1 li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-sub-section-1 li a:hover{
+    color: #00c7fa;
 }
 
 
@@ -153,3 +159,12 @@
     transition: all 1s ease;
 
 }
+.footer-about{
+    font-size: 16px;
+    text-align: left !important;
+    line-height: 1.6em;
+    word-spacing: 4px;
+    margin-top: 18px;
+}
+
+
