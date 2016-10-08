@@ -307,7 +307,9 @@ section:first-of-type{
 
 /////////////////////////////////////////////////////////////////////////*/
 
-
+#about-section{
+    margin: 5% 0;
+}
 
 
 .title{
@@ -371,6 +373,10 @@ section:first-of-type{
                             Our Services Section
 
 /////////////////////////////////////////////////////////////////////////*/
+#our-services-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+}
 
 
 #our-services-section .container .subtitle{
@@ -410,9 +416,9 @@ section:first-of-type{
 /////////////////////////////////////////////////////////////////////////*/
 
 #testimonial-section{
-    background-color: #fafafa;
+    background-color: rgba(5, 200, 250, 0.6);
     padding: 50px 0;
-    margin: 40px 0 0 ;
+    /*margin: 40px 0 0 ;*/
 }
 
 
@@ -424,8 +430,8 @@ section:first-of-type{
 
 .uk-slidenav-position{
     width: 100%;
-    height: 480px;
-    background-color: #ed7161;
+    height: 300px;
+    /*background-color: rgba(5, 200, 250, 0.6);*/
     padding: 20px;
     display: -webkit-flex;
     justify-content: center;
@@ -441,11 +447,11 @@ section:first-of-type{
 
 .testi-text{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.9vw;
     padding: 10%;
-    font-weight: bold;
     color: #fff;
 }
+
 
 #testimonial-section img{
     -webkit-filter: invert(20%);
@@ -509,14 +515,14 @@ section:first-of-type{
 /////////////////////////////////////////////////////////////////////////*/
 
 #our-clients-section{
-    background-color: #d8d6d3;
+    background-color: #f1f1f1;
 
 }
 
 #our-clients-section img{
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-        filter: grayscale(100%);
+    -webkit-filter: grayscale(6%);
+    -moz-filter: grayscale(60%);
+        filter: grayscale(60%);
         padding: 10px;
         cursor: pointer;
         transition: all .4s ease-out;
@@ -527,6 +533,7 @@ section:first-of-type{
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
+    transform: scale(1.2);
 
 }
 
@@ -775,10 +782,10 @@ Contact us page
 
 .contact-social-icon li{
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     /*border-radius: 50%;*/
-    line-height: 40px;
+    line-height: 50px;
     background-color: #fff;
     text-align: center;
     position: relative;
@@ -1505,6 +1512,14 @@ Contact us page
 
 .p-20{
     padding: 20px!important;
+}
+
+.p-l-5{
+    padding-left: 5px!important;
+}
+
+.p-l-20{
+    padding-left: 20px!important;
 }
 
 .p-t-40{

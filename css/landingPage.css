@@ -18,10 +18,25 @@
 }
 
 .contact-strip{
-
-    background-color: #7F7575;
+    background-color: #525252;;
     padding: 20px;
 }
+
+.contact-strip .uk-grid .cta-strip-btn{
+    color: #00C7FA;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.contact-strip .uk-grid .cta-strip-btn:hover{
+    color: #fff;
+    background-color: #00C7FA;
+}
+
  .bg-intro
  {
      background: rgba(249, 242, 235, 0.27);
@@ -42,7 +57,7 @@
     background: url('../img/clouds.png') center no-repeat;
     background-position: 0% 50%;
     height: 666px;
-    padding-top: 13%;
+    padding-top: 5%;
 }
 
 
@@ -168,3 +183,16 @@
 }
 
 
+
+
+#contact-form1-section .form-group button.submit-btn{
+    background-color: #05c8fa;
+    width: 60%;
+    border: none;
+    color: #fff;
+}
+
+
+#header-section{
+    height: 50px;
+}
