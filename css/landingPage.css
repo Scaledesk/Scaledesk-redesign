@@ -1,7 +1,7 @@
 
 .mdal-btn{
-    border: 2px solid #00C7FA;
-    color:#00C7FA;
+    border: 2px solid #05c8fa;;
+    color:#05c8fa;
     cursor:pointer;
     height:35px;
     width:120px;
@@ -13,7 +13,7 @@
 
 }
 .mdal-btn:hover{
-    background-color:#00C7FA;
+    background-color:#05c8fa;;
     color:#fff;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .contact-strip .uk-grid .cta-strip-btn{
-    color: #00C7FA;
+    color: #05c8fa;;
     cursor: pointer;
     height: 50px;
     width: 150px;
@@ -34,17 +34,20 @@
 
 .contact-strip .uk-grid .cta-strip-btn:hover{
     color: #fff;
-    background-color: #00C7FA;
+    background-color: #05c8fa;;
 }
 
- .bg-intro
- {
+ .bg-intro {
      background: rgba(249, 242, 235, 0.27);
      PADDING: 30PX;
  }
+
+
 .f-color{
     color:#2BB6E4;
 }
+
+
 .f-16{
     font-size: 16px;
 }
@@ -84,19 +87,35 @@
 
 #contact-form1-section.form-group.submit-btn{
     width: 60%;
-    background-color: #2BB6E4;
+    background-color: #05c8fa;;
     color: #fff;
     border: none;
     cursor: pointer;
 
 }
 
+.footer-submit-btn{
+    background-color: #05c8fa;;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+}
+
+.submit-btn{
+    background-color: #05c8fa;;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+}
+
 
 #contact-modal-section{
     background: url('../img/clouds.png') center no-repeat;
     background-position: 0% 50%;
-    height: 666px;
-    padding-top: 13%;
+    height: 500px;
+    padding-top: 7%;
 }
 
 
@@ -123,7 +142,7 @@
 
 #contact-modal-section.form-group.submit-btn{
     width: 60%;
-    background-color: #2BB6E4;
+    background-color: #05c8fa;;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -150,14 +169,14 @@
 
 .fold-form-title{
     font-size: 25px;
-    color: #565a5c;
+    color: #fff;
     text-align: center;
 }
 
 .form-bg{
     background: rgba(255, 255, 255, 0.74);
     padding: 20px;
-    height: 410px;
+    margin-bottom: 30px!important;
 }
 
 
@@ -193,6 +212,40 @@
 }
 
 
-#header-section{
-    height: 50px;
+
+
+
+#intro-section > +  h1 , h3 , p {
+    color: #fff;
+
+}
+
+.intro-section-title h1{
+    font-size: 3.5em;
+    line-height: 1.6em;
+}
+
+.feature-box p {
+    height: 165px;
+    overflow: hidden;
+
+}
+
+#our-services-section {
+    background-color: #fafafa;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .service-bg{
+        height: 100%;
+    }
+
+    .intro-section-bg{
+        margin-top: 50px;
+    }
+
+
+
 }

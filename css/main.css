@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -125,6 +132,9 @@ section:first-of-type{
     z-index: 100;
 }
 
+#header-section{
+    height: 50px;
+}
 
 .custom-nav{
     background-color: transparent!important;
@@ -196,7 +206,7 @@ section:first-of-type{
 .intro-section-bg{
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 100%;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -moz-justify-content: center;
@@ -244,20 +254,21 @@ section:first-of-type{
 
 
 #intro-section .form-group input{
-    padding: 20px;
-    background-color: transparent;
-    width: 60%;
+    padding: 25px;
+    background-color: #fff;
+    width: 95%;
     box-sizing: border-box;
 
 }
 
 
 #intro-section .form-group .submit-btn{
-    width: 60%;
-    background-color: #2BB6E4;
+    width: 95%;
+    background-color: #05c8fa;;
     color: #fff;
     border: none;
     cursor: pointer;
+    height: 50px;
 
 }
 
@@ -1215,15 +1226,13 @@ Contact us page
 
 
 .service-bg{
-    background: #CED4D4 url('https://hd.unsplash.com/photo-1438302439441-82e18f791f5e') center no-repeat;
+    background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0, 0.5 ) ) , url('../img/careers.jpg') center no-repeat;
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-size: cover;
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
+
+
 
 .service-bg-txt{
     color: #fff;
@@ -1742,6 +1751,10 @@ Contact us page
     .cd-primary-nav a, .cd-primary-nav ul a{
         color: #fff;
     }
+
+    .subtitle{
+        margin: 10px 0;
+    }
 }
 
 
@@ -1765,6 +1778,7 @@ Contact us page
     section{
         padding: 20px 0 0 0!important;
         margin: 0!important;
+        height: 100%;
     }
 
     section:first-child{
@@ -1793,6 +1807,12 @@ Contact us page
     .rocket{
         display: none;
     }
+
+
+    #header-section{
+        height: 70px;
+    }
+
 
 
 }
