@@ -247,10 +247,10 @@
     transition: all .3s ease-in-out;
 }
 
-/*.price-container:hover{*/
-    /*background-color: #00c7fa;*/
-    /*color: #fff;*/
-/*}*/
+.price-container:hover{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    transform: scale(1.1);
+}
 
 .price-container .main-heading{
     font-size: 30px;
