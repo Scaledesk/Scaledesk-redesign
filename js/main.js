@@ -1,46 +1,81 @@
-/**
- * Created by neerajsingh on 30/08/16.
- */
+///**
+// * Created by neerajsingh on 30/08/16.
+// */
+//
+//
+//
+////Back to top button//
+//
+//
+//var offset = 300,
+//
+//    offset_opacity = 1200,
+//
+//    scroll_top_duration = 700,
+//
+//    $back_to_top = $('.cd-top');
+//
+////hide or show the "back to top" link
+//$(window).scroll(function(){
+//    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+//    if( $(this).scrollTop() > offset_opacity ) {
+//        $back_to_top.addClass('cd-fade-out');
+//    }
+//});
+//
+//
+////smooth scroll to top
+//
+//$back_to_top.on('click', function(event){
+//    event.preventDefault();
+//    $('body,html').animate({
+//            scrollTop: 0 ,
+//        }, scroll_top_duration
+//    );
+//});
+//
+//
+//
+//
+/////////////Google maps////////
+//
+//$('#map-section')
+//    .click(function(){
+//        $(this).find('iframe').addClass('clicked')})
+//    .mouseleave(function(){
+//        $(this).find('iframe').removeClass('clicked')});
+//
+//
+//
+//
+//
 
 
+//For Section smooth scrolling//
 
-//Back to top button//
+$(document).ready(function() {
+    // Add smooth scrolling to all links
 
 
-var offset = 300,
+    $("a").on('click', function (event) {
 
-    offset_opacity = 1200,
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-    scroll_top_duration = 700,
+            // Store hash
+            var hash = this.hash;
 
-    $back_to_top = $('.cd-top');
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 90
+            }, 500, function () {
 
-//hide or show the "back to top" link
-$(window).scroll(function(){
-    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-    if( $(this).scrollTop() > offset_opacity ) {
-        $back_to_top.addClass('cd-fade-out');
-    }
+                // Add hash (#) to URL when done scrolling (default click behavior)
+//        window.location.hash = hash;
+            });
+        } // End if
+    });
 });
-
-
-//smooth scroll to top
-
-$back_to_top.on('click', function(event){
-    event.preventDefault();
-    $('body,html').animate({
-            scrollTop: 0 ,
-        }, scroll_top_duration
-    );
-});
-
-
-
-
-///////////Google maps////////
-
-$('#map-section')
-    .click(function(){
-        $(this).find('iframe').addClass('clicked')})
-    .mouseleave(function(){
-        $(this).find('iframe').removeClass('clicked')});

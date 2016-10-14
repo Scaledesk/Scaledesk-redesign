@@ -103,7 +103,7 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
     .cd-main-header {
-        height: 90px;
+        height: 80px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
     }
     .cd-main-header::after {
@@ -401,7 +401,7 @@ Main components
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
     -moz-transition: -moz-transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
-    font-size: 14px;
+    font-size: 16px;
 }
 .cd-primary-nav.is-hidden, .cd-primary-nav ul.is-hidden {
     /* secondary navigations hidden by default */
@@ -584,11 +584,11 @@ Main components
         transition: color 0.3s, box-shadow 0.3s;
     }
     .cd-primary-nav > li > a:hover {
-        color: #69aa6f;
+        color: #26cffb;
     }
     .cd-primary-nav > li > a.selected {
-        color: #69aa6f;
-        box-shadow: inset 0 -2px 0 #69aa6f;
+        color: #26cffb;
+        box-shadow: inset 0 -2px 0 #26cffb;
     }
     .cd-primary-nav .go-back, .cd-primary-nav .see-all {
         display: none;
@@ -694,7 +694,7 @@ Main components
         font-size: 1.4rem;
     }
     .cd-primary-nav .cd-secondary-nav a:hover {
-        color: #69aa6f;
+        color: #26cffb;
     }
     .cd-primary-nav .cd-secondary-nav ul {
         /* Force Hardware Acceleration in WebKit */
@@ -760,7 +760,7 @@ Main components
         margin-bottom: .6em;
     }
     .cd-primary-nav .cd-nav-gallery .cd-nav-item h3 {
-        color: #69aa6f;
+        color: #26cffb;
         font-weight: bold;
         padding: 0 .4em;
     }
@@ -785,7 +785,7 @@ Main components
         background: #f6f6f5;
     }
     .cd-primary-nav .cd-nav-icons .cd-nav-item h3 {
-        color: #69aa6f;
+        color: #26cffb;
         font-weight: bold;
     }
     .cd-primary-nav .cd-nav-icons .cd-nav-item p {
@@ -830,7 +830,7 @@ Main components
         background: #c9cbc4;
     }
     .has-children > a:hover::before, .has-children > a:hover::after, .go-back a:hover::before, .go-back a:hover::after {
-        background: #69aa6f;
+        background: #26cffb;
     }
 }
 

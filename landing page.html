@@ -8,10 +8,12 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/slideshow.min.js"></script>
     <script src="js/landingpage.js"></script>
+    <script src="js/scrollspy.min.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/slideshow.gradient.min.css">
     <link rel="stylesheet" href="css/slideshow.min.css">
     <link rel="stylesheet" href="css/slidenav.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 
     <link rel="stylesheet" href="css/main.css">
@@ -52,67 +54,10 @@ Header Navigation
 
     <nav class="cd-nav">
         <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-
-
-            <!-- <li class="has-children">
-                 <a href="services.html">Services <i class="fa fa-angle-down"></i></a>
-
-                 <ul class="cd-nav-gallery is-hidden">
-                     <li class="go-back"><a href="#0"></a></li>
-                     <li class="see-all"><a href="">See all</a></li>
-                     <li>
-                         <a class="cd-nav-item" href="#">
-                             <img src="img/php.svg" width="100" alt="Product Image" class="uk-hidden">
-                             <h4>Web Application Development</h4>
-                                 <p><a href="PHP-CI-Development.html">PHP - CI Development</a></p>
-                                 <p><a href="PHP-LaravelDevelopment.html">PHP LaravelDevelopment</a></p>
-                                 <p><a href="Django-Python-Development.html">Django - Python Development</a></p>
-                                 <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
-
-                         </a>
-                     </li>
-
-                     <li>
-                         <a class="cd-nav-item" href="#">
-                             <img src="img/AngularJS-small.png" width="100" alt="Product Image" class="uk-hidden">
-                             <h4>Mobile App Developmets</h4>
-
-                             <p><a href="AngularJS-SPA-Development.html">AngularJS SPA Development</a></p>
-                             <p><a href="Hybrid-Mobile-App-Development.html">Hybrid Mobile App Development</a></p>
-                             <p><a href="Mobile-UI-Design.html">Mobile UI Design</a></p>
-                             <p><a href="iOS-App-development.html">iOS App development</a></p>
-                             <p><a href="App-Launch-strategy-&-ASO.html">App Launch strategy & ASO</a></p>
-                         </a>
-                     </li>
-
-                     <li>
-                         <a class="cd-nav-item" href="#">
-                             <img src="img/wireframes.svg" width="100" alt="Product Image" class="uk-hidden">
-                             <h4>Design & HTML Development</h4>
-                             <p><a href="Responsive-WEb-Page-Development.html">Responsive WEb Page Development</a></p>
-                             <p><a href="MultiPage-WEbsite-Development.html">MultiPage WEbsite Development</a></p>
-                             <p><a href="Custom-Web-Page-Design.html">Custom Web Page Design</a></p>
-                             <p><a href="Mobile-UI-UX.html">Mobile UI / UX </a></p>
-                             <p><a href="Website-UI-UX.html">Website UI / UX </a></p>
-                         </a>
-                     </li>
-
-                     <li>
-                         <a class="cd-nav-item" href="#">
-                             <img src="img/img.jpg" alt="Product Image" class="uk-hidden">
-                             <h4>e-Commerce Development</h4>
-                             <p><a href="Wordpress-e-Commerce-Development.html">Wordpress e-Commerce Development</a></p>
-                             <p><a href="#">MAgento e-Comm Development</a></p>
-                             <p><a href="#">Shopify e-Commerce SOlution</a></p>
-                             <p><a href="#">Custom e-Commerce Development</a></p>
-                         </a>
-                     </li>
-                 </ul>
-             </li>-->
             <li><a href="#about-section">Features</a></li>
             <li><a href="#our-services-section">Services</a></li>
-            <li><a href="#testimonial-section">Clients</a></li>
-            <li><a href="#contact-form-section">Contact us</a></li>
+            <li><a href="#our-clients-section">Clients</a></li>
+            <li><a href="#contact-form1-section">Contact us</a></li>
             <li><button class="uk-button m-t-20 m-l-4 mdal-btn">0987654321</button></li>
 
         </ul> <!-- primary-nav -->
@@ -138,7 +83,7 @@ Intro section
 
         <div class="uk-grid">
 
-            <div class="width-60">
+            <div class="width-60 uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-left">
                 <div class="intro-section-bg">
                     <div class="intro-section-title">
                         <h1 class="f-color">Ecommerce Website Development </h1>
@@ -152,7 +97,7 @@ Intro section
                 </div>
             </div>
 
-            <div class="width-40 uk-text-right m-t-100">
+            <div class="width-40 uk-text-right m-t-100 uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-right">
 
                 <h2 class="fold-form-title">Talk to our Experts</h2>
                 <form class="uk-form form-bg">
@@ -222,9 +167,9 @@ Feature section
     </div>
 
 
-    <div class="uk-container uk-container-center">
-        <div class="uk-grid m-t-60">
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center ">
+    <div class="uk-container uk-container-center " data-uk-scrollspy="{cls:'uk-animation-fade', target:'.uk-grid', delay:300}">
+        <div class="uk-grid m-t-60 "  >
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow fadeInRight">
                 <div class="feature-box">
                     <img src="img/quality-award.svg" alt="" width="100">
                     <h3 class="subtitle">Responsive Design</h3>
@@ -237,7 +182,7 @@ Feature section
             </div>
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center">
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow fadeInRight">
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Highly Scalable</h3>
@@ -251,7 +196,7 @@ Feature section
 
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center ">
+            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center wow fadeInRight">
                 <div class="feature-box">
                     <img src="img/wireframes.svg" alt="" width="100">
                     <h3 class="subtitle">Marketplace Integration</h3>
@@ -268,7 +213,7 @@ Feature section
 
         </div>
         <div class="uk-grid m-t-60">
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center ">
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow fadeInLeft">
                 <div class="feature-box">
                     <img src="img/quality-award.svg" alt="" width="100">
                     <h3 class="subtitle">Extensive Backend</h3>
@@ -281,7 +226,7 @@ Feature section
             </div>
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center">
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow fadeInLeft">
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Lightening Fast</h3>
@@ -294,7 +239,7 @@ Feature section
 
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center ">
+            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center wow fadeInLeft">
                 <div class="feature-box">
                     <img src="img/wireframes.svg" alt="" width="100">
                     <h3 class="subtitle">Payment Gateways</h3>
@@ -350,7 +295,7 @@ Our Services section
 
     <div class="uk-container uk-container-center">
         <div class="uk-grid m-t-60">
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center ">
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow bounceInRight">
                 <div class="feature-box">
                     <img src="img/design.svg" alt="" width="100">
                     <h3 class="subtitle">Diversified Technology</h3>
@@ -363,7 +308,7 @@ Our Services section
             </div>
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center">
+            <div class="uk-width-large-1-3 uk-width-medium-1-2  uk-text-center wow bounceInRight">
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Platform Advice</h3>
@@ -376,7 +321,7 @@ Our Services section
 
 
 
-            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center ">
+            <div class="uk-width-large-1-3 uk-width-medium-1-1  uk-text-center  wow bounceInRight">
                 <div class="feature-box">
                     <img src="img/hosting.svg" alt="" width="100">
                     <h3 class="subtitle">Maintenance & Hosting</h3>
@@ -671,7 +616,7 @@ Our Clients
 
         <div class="uk-grid">
             <div class="uk-width-medium-1-1">
-                <h2 class="title c-white ">Our Clients</h2>
+                <h2 class="title brand-c ">Our Clients</h2>
             </div>
         </div>
 
@@ -935,6 +880,7 @@ Fab Button
 
 <script src="js/main.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/wow.min.js"></script>
 
 
 <script>
@@ -960,6 +906,9 @@ Fab Button
 //        $("nav").slideToggle();
 //        $(this).toggleClass("active");
 //    });
+
+
+    new WOW().init();
 
 
 

@@ -16,6 +16,7 @@ body{
 }
 
 
+
 /*//////////////////////////////////////////////////////////////////////////
 
                      Includes Webfont Gotham fonts
@@ -228,6 +229,7 @@ section:first-of-type{
    /* background: rgba(249, 242, 235, 0.27);*/
    /* background: rgba(255, 255, 255, 0.74);*/
     padding: 20px;
+    text-align: left;
 
 }
 
@@ -459,7 +461,7 @@ section:first-of-type{
 .testi-text{
     text-align: center;
     font-size: 1.9vw;
-    padding: 10%;
+    padding: 6%;
     color: #fff;
 }
 
@@ -496,6 +498,7 @@ section:first-of-type{
 .uk-slidenav-position .uk-slidenav{ /*Override default uikit Slider arrows color and visibility*/
     display: block;
     color: #fff;
+    top: 42%;
 }
 
 .uk-slidenav-position .uk-slidenav:hover{  /* On Hover Override default uikit Slider arrows color and visibility*/
@@ -1645,6 +1648,9 @@ Contact us page
     color: #000!important;
 }
 
+.brand-c{
+    color: #00c7fa;
+}
 
 
 /* Customs Width for Columns*/
