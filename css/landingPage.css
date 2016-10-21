@@ -161,11 +161,11 @@
 .footer-sub-section-1 li a{
     text-decoration: none;
     font-size: 16px;
+    color: #FFFFFF;
 }
 .footer-sub-section-1 li a:hover{
     color: #00c7fa;
 }
-
 
 .fold-form-title{
     font-size: 25px;
@@ -174,7 +174,7 @@
 }
 
 .form-bg{
-    background: rgba(255, 255, 255, 0.74);
+    background: rgba(0,0,0,0.65);
     padding: 20px;
     margin-bottom: 30px!important;
 }
@@ -199,6 +199,7 @@
     line-height: 1.6em;
     word-spacing: 4px;
     margin-top: 18px;
+    color:#FFFFFF;
 }
 
 
@@ -222,7 +223,7 @@
 
 .intro-section-title h1{
     font-size: 3.5em;
-    line-height: 1.6em;
+    line-height: 1.2em;
 }
 
 .feature-box p {
@@ -305,7 +306,78 @@
     .intro-section-bg{
         margin-top: 50px;
     }
-
-
-
 }
+
+
+/*custom css by smriti*/
+header .cd-primary-nav > li > a.shrink{
+    height: 50px !important;
+    line-height: 50px !important;
+    transition: all .4s;
+}
+nav.cd-nav.shrink{
+    height: 50px !important;
+    transition: all .4s;
+}
+header.cd-main-header.cd-logo.shrink{
+    position:absolute;
+    top:13% !important;
+    left: 5% !important;
+    transition: all .4s;
+}
+nav .cd-nav ul li a.shrink {
+    height: 50px !important;
+    line-height: 50px !important;
+    transition: all .4s;
+}
+
+ul li button.mdal-btn.m-t-20.shrink {
+    margin-top: 7px !important;
+}
+/* code for animated blinking cursor */
+#typed{
+    color: #fafafa !important;
+}
+.typed-cursor{
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+0% { opacity:1; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-primary-nav > li > a {
+        height: 70px;
+        line-height: 70px;
+
+    }
+};

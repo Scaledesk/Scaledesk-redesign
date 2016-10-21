@@ -69,7 +69,7 @@ h3{
 
 p{
     color: #565a5c;
-    line-height: 2em;
+    line-height: 1.6em;
     word-spacing: 5px;
     margin: 0;
     padding: 0;
@@ -256,6 +256,8 @@ section:first-of-type{
 
 
 #intro-section .form-group input{
+    font-size: 18px;
+    color: #484848;
     padding: 25px;
     background-color: #fff;
     width: 95%;
@@ -568,7 +570,8 @@ section:first-of-type{
 /////////////////////////////////////////////////////////////////////////*/
 
 #footer-section{
-    background-color: #f3f3f3;
+    background-color: #16425b;
+    color: #FFFFFF;
     padding: 80px 0 0;
 
 }
@@ -1119,7 +1122,7 @@ Contact us page
 
 .icon-bg:hover{
     background-color: #f5f5f5
-
++
 }
 
 .icon-bg img{
@@ -1229,13 +1232,11 @@ Contact us page
 
 
 .service-bg{
-    background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0, 0.5 ) ) , url('../img/careers.jpg') center no-repeat;
+    background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('../img/banner1.jpg') center no-repeat;
     width: 100%;
     height: 700px;
     background-size: cover;
 }
-
-
 
 .service-bg-txt{
     color: #fff;
@@ -1244,6 +1245,7 @@ Contact us page
     text-align: center;
     font-weight: 700;
 }
+
 
 .service-card{
     padding: 40px 20px;
@@ -1412,13 +1414,9 @@ Contact us page
 .m-0{
     margin: 0!important;
 }
-
-
-
 .m-5{
     margin: 5px!important;
 }
-
 .m-t-0{
     margin-top: 0!important;
 }
@@ -1496,12 +1494,11 @@ Contact us page
 .m-30{
     margin: 30px!important;
 }
+.m-t-80{
+    margin-top: 80px !important;
+}
 
 /*////Ends here///*/
-
-
-
-
 
 /*///Padding//*/
 
@@ -1651,6 +1648,7 @@ Contact us page
 .brand-c{
     color: #00c7fa;
 }
+
 
 
 /* Customs Width for Columns*/
@@ -1833,6 +1831,21 @@ Contact us page
 }
 
 
+.service-bg{
+    position: relative;
+}
 
+
+.service-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: saturation(100%)
+        filter: blur(4px);
+}
 
 

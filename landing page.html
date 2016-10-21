@@ -9,23 +9,38 @@
     <script src="js/slideshow.min.js"></script>
     <script src="js/landingpage.js"></script>
     <script src="js/scrollspy.min.js"></script>
+    <script src="js/typed.js"></script>
+
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/slideshow.gradient.min.css">
     <link rel="stylesheet" href="css/slideshow.min.css">
     <link rel="stylesheet" href="css/slidenav.css">
     <link rel="stylesheet" href="css/animate.css">
-
-
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="stylesheet" href="css/landingPage.css">
-
-
-
     <script src="https://use.fontawesome.com/418c680b48.js"></script>
+    <script>
+        $(function(){
+            $("#typed").typed({
+                // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                stringsElement: $('#typed-strings'),
+                typeSpeed: 30,
+                backDelay: 500,
+                loop: false,
+                contentType: 'html', // or text
+                // defaults to false for infinite loop
+                loopCount: false,
+                callback: function(){ foo(); },
+                resetCallback: function() { newTyped(); }
+            });
+            $(".reset").click(function(){
+                $("#typed").typed('reset');
+            });
+        });
+        function newTyped(){ /* A new typed object */ }
+        function foo(){ console.log("Callback"); }
 
-
-
+    </script>
 </head>
 <body>
 
@@ -41,7 +56,6 @@ Header Navigation
 
     <header class="cd-main-header">
         <a class="cd-logo" href="index.html"><img src="img/logo.png" width="150" alt="Logo"></a>
-
         <ul class="cd-header-buttons">
             <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
             <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
@@ -49,18 +63,25 @@ Header Navigation
     </header>
 
     <main class="cd-main-content"></main>
-
     <div class="cd-overlay"></div>
 
     <nav class="cd-nav">
-        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+        <ul class="uk-nav uk-nav-side cd-primary-nav is-fixed" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
             <li><a href="#about-section">Features</a></li>
             <li><a href="#our-services-section">Services</a></li>
+            <li><a href="#pricing-table">Packages</a></li>
             <li><a href="#our-clients-section">Clients</a></li>
             <li><a href="#contact-form1-section">Contact us</a></li>
             <li><button class="uk-button m-t-20 m-l-4 mdal-btn">0987654321</button></li>
+        </ul>
+        <!--<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">-->
+            <!--<li><a href="#about-section">Features</a></li>-->
+            <!--<li><a href="#our-services-section">Services</a></li>-->
+            <!--<li><a href="#our-clients-section">Clients</a></li>-->
+            <!--<li><a href="#contact-form1-section">Contact us</a></li>-->
+            <!--<li><button class="uk-button m-t-20 m-l-4 mdal-btn">0987654321</button></li>-->
 
-        </ul> <!-- primary-nav -->
+        <!--</ul> &lt;!&ndash; primary-nav &ndash;&gt;-->
     </nav> <!-- cd-nav -->
 
     <!--------------------->
@@ -86,22 +107,36 @@ Intro section
             <div class="width-60 uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-left">
                 <div class="intro-section-bg">
                     <div class="intro-section-title">
-                        <h1 class="f-color">Ecommerce Website Development </h1>
-                        <h3 class="c-white">We don’t build websites
-                            We build businesses</h3>
+                        <h1 class="f-color animated fadeInLeftBig">Ecommerce Development </h1>
+                        <div class="type-wrap" style="margin-left: 0">
+                            <div id="typed-strings">
+                                <span>We don't bulid websites.</span>
+                                <p>Lorem ispum awefj aehfbahe ashbfbs</p>
+                                <p>We help STARTUP !</p>
+                                <p>We Design Mobile Apps</p>
+                            </div>
+                            <span id="typed" style="white-space:pre;"></span>
+                        </div>
+                        <!--<h3 class="c-white">We don’t build websites-->
+                            <!--We build businesses</h3>-->
                         <p class="f-20 c-white">
-                            At ScaleDesk, we help you to get your business online by choosing the right technology and right strategy by understanding your business requirements. We provide well engineered eCommerce websites with top notch user experience for your customers. We’re an ecommerce website development company based out of Delhi NCR, helping SMEs and startups to stand out in this competitive market.</p>
+                            At ScaleDesk, we help you to get your business online by choosing the right technology and
+                            right strategy by understanding your business requirements.
+                            We provide well engineered eCommerce websites with top notch user experience for your customers.
+
+                        </p>
+                        <!--We’re an ecommerce website development company based out of Delhi NCR, helping SMEs and startups to stand out in this competitive market.-->
 
                     </div>
 
                 </div>
             </div>
 
-            <div class="width-40 uk-text-right m-t-100 uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-right">
+            <div class="width-40 uk-text-right m-t-80 uk-scrollspy-init-inview uk-scrollspy-inview animated flipInY">
 
-                <h2 class="fold-form-title">Talk to our Experts</h2>
+
                 <form class="uk-form form-bg">
-
+                    <h2 class="fold-form-title">Talk to our Experts</h2>
                     <div class="form-group">
                         <div class="uk-width-1-1 uk-text-center"><input type="text" placeholder="Full Name" class="uk-width-1-2"></div>
                     </div>
@@ -173,7 +208,7 @@ Feature section
                 <div class="feature-box">
                     <img src="img/quality-award.svg" alt="" width="100">
                     <h3 class="subtitle">Responsive Design</h3>
-                    <p class="text-justify">We offer multi device compatible store that enables you to reach out to your potential customers on any platform i.e. Desktop, Tablet or Mobile, at the same time keeping consistency in customer shopping experience.
+                    <p class="uk-text-left">We offer multi device compatible store that enables you to reach out to your potential customers on any platform i.e. Desktop, Tablet or Mobile, at the same time keeping consistency in customer shopping experience.
                         <a href="">Read More</a> </p>
 
                 </div>
@@ -186,7 +221,7 @@ Feature section
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Highly Scalable</h3>
-                    <p class="text-justify">We develop your web store in a way that it can scale as per your business needs. Our solution provides you a platform where you can host 10 products to 10K products at the same user experience level.
+                    <p class="uk-text-left">We develop your web store in a way that it can scale as per your business needs. Our solution provides you a platform where you can host 10 products to 10K products at the same user experience level.
                         <br>
                         <a href="">Read More</a> </p>
                 </div>
@@ -200,7 +235,7 @@ Feature section
                 <div class="feature-box">
                     <img src="img/wireframes.svg" alt="" width="100">
                     <h3 class="subtitle">Marketplace Integration</h3>
-                    <p class="text-justify">Our ultimate goal is to help you to grow your business. We provide multiple marketplace integration that help you to sell your products and exploring new sales channels through Ecommerce giants   &nbsp;
+                    <p class="uk-text-left">Our ultimate goal is to help you to grow your business. We provide multiple marketplace integration that help you to sell your products and exploring new sales channels through Ecommerce giants   &nbsp;
                         <br>
 
                         <a href="">Read More</a> </p>
@@ -217,7 +252,7 @@ Feature section
                 <div class="feature-box">
                     <img src="img/quality-award.svg" alt="" width="100">
                     <h3 class="subtitle">Extensive Backend</h3>
-                    <p class="text-justify">We build the architecture and backend of our websites that they can be integrated with ERP, CRM, Accounting Management Application, Inventory Management System and Point of Sales (POS) applications.  &nbsp;<br>
+                    <p class="uk-text-left">We build the architecture and backend of our websites that they can be integrated with ERP, CRM, Accounting Management Application, Inventory Management System and Point of Sales (POS) applications.  &nbsp;<br>
                         <a href="">Read More</a> </p>
 
                 </div>
@@ -230,7 +265,7 @@ Feature section
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Lightening Fast</h3>
-                    <p class="text-justify">It gets very disappointing for a customer if he has to wait for something due to slow loading. So we build highly optimized websites and host them on powerful servers so that it can be open quickly on slow   &nbsp;
+                    <p class="uk-text-left">It gets very disappointing for a customer if he has to wait for something due to slow loading. So we build highly optimized websites and host them on powerful servers so that it can be open quickly on slow   &nbsp;
                         <br><a href="">Read More</a> </p>
                 </div>
 
@@ -243,8 +278,8 @@ Feature section
                 <div class="feature-box">
                     <img src="img/wireframes.svg" alt="" width="100">
                     <h3 class="subtitle">Payment Gateways</h3>
-                    <p class="text-justify">Customers love secure and hassle-free transactions. We offer payment gateway from all leading payment gateway providers at ZERO setup fee with free integration. Accept payments via debit cards
-                        <br>  &nbsp;
+                    <p class="uk-text-left">Customers love secure and hassle-free transactions. We offer payment gateway from all leading payment gateway providers at ZERO setup fee with free integration. Accept payments via debit cards
+                        <br>
 
                         <a href="">Read More</a> </p>
                 </div>
@@ -282,7 +317,7 @@ Our Services section
 
 
 
-<section id="our-services-section " class="p-t-60 p-b-60">
+<section id="our-services-section" class="p-t-60 p-b-60">
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1 uk-text-center">
@@ -299,8 +334,8 @@ Our Services section
                 <div class="feature-box">
                     <img src="img/design.svg" alt="" width="100">
                     <h3 class="subtitle">Diversified Technology</h3>
-                    <p class="text-justify">From ultimate designing of a user-friendly interface, outgoing, demonstrative bulletproof application codes, we ranges in giving your business the much needed boost
-                        <br>  &nbsp;<a href="">Read More</a> </p>
+                    <p class="uk-text-left">From ultimate designing of a user-friendly interface, outgoing, demonstrative bulletproof application codes, we ranges in giving your business the much needed boost
+                        <br><a href="">Read More</a> </p>
 
                 </div>
 
@@ -312,8 +347,8 @@ Our Services section
                 <div class="feature-box">
                     <img src="img/optimization.svg" alt="" width="100">
                     <h3 class="subtitle">Platform Advice</h3>
-                    <p class="text-justify">Baffled by the technological discrepancies? Learn from us and we will guide you through, offering you best knowledge to pick your platform and gauge into
-                        <br>&nbsp;<a href="">Read More</a> </p>
+                    <p class="uk-text-left">Baffled by the technological discrepancies? Learn from us and we will guide you through, offering you best knowledge to pick your platform and gauge into
+                        <br><a href="">Read More</a> </p>
                 </div>
 
 
@@ -325,7 +360,7 @@ Our Services section
                 <div class="feature-box">
                     <img src="img/hosting.svg" alt="" width="100">
                     <h3 class="subtitle">Maintenance & Hosting</h3>
-                    <p class="text-justify">We offer to create your digital marketing presence, we help in converting monetary gains of clicks, with us you can boost the traffic online plus you gain brand authority, &nbsp;
+                    <p class="uk-text-left">We offer to create your digital marketing presence, we help in converting monetary gains of clicks, with us you can boost the traffic online plus you gain brand authority, &nbsp;
                         <br><a href="">Read More</a> </p>
                 </div>
 
@@ -525,7 +560,7 @@ Our Services section
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-medium-1-1">
-                <h2 class="title m-b-60 c-white">What our client says</h2>
+                <h2 class="title c-white">What our client says</h2>
 
             </div>
         </div>
@@ -620,12 +655,11 @@ Our Clients
             </div>
         </div>
 
-        <div class="uk-grid ">
-            <div class="uk-width-medium-1-4 uk-text-center">
+        <div class="uk-grid animated fadeInLeftBig">
+            <div class="uk-width-medium-1-4 uk-text-center ">
                 <a target="_blank" href="http://justpujasamagri.com/"><img src="img/justpuja.png" alt="" width="190" class="m-t-15"></a>
 
             </div>
-
 
             <div class="uk-width-medium-1-4 uk-text-center">
                 <a target="_blank" href="http://www.mandigate.com/web/landing/"><img src="img/mandilogocolorednew2.png" alt="" width="120"></a>
@@ -640,12 +674,10 @@ Our Clients
                 <a href=""><img src="img/invite-affairs-logo.png" alt="" width="190" class="m-t-15"></a>
             </div>
 
-
-
         </div>
 
 
-        <div class="uk-grid m-b-60">
+        <div class="uk-grid m-b-60 animated fadeInRightBig">
             <div class="uk-width-medium-1-4 uk-text-center">
                 <a target="_blank" href="http://www.shaleenanowbuth.com/"><img src="img/shaleenanowbuth.png" alt="" width="240" class="m-t-15"></a>
             </div>
@@ -765,8 +797,8 @@ Footer Section
                 </ul>
             </div>
             <div class="uk-width-small-1-1 uk-width-large-1-4 uk-width-medium-1-1 ">
-                <h3>Links</h3>
-                <ul class="footer-sub-section-1 m-t-5">
+                <h3 class="brand-c">Links</h3>
+                <ul class="footer-sub-section-1 m-t-5 c-white">
                     <!-- <li><a href=""><img src="img/logo.png" width="150" alt="Logo"></li>-->
                     <li><a href="">Features</a></li>
                     <li><a href="">Services</a></li>
@@ -778,7 +810,7 @@ Footer Section
 
 
             <div class="uk-width-small-1-1 uk-width-large-1-4 uk-width-medium-1-1 ">
-                        <h3>Callback</h3>
+                        <h3 class="brand-c">Callback</h3>
                         <form class="uk-form">
                             <div class="form-group">
                                 <div class="uk-width-1-1 uk-text-center">
@@ -808,7 +840,7 @@ Footer Section
                     </div>
 
             <div class="uk-width-small-1-1 uk-width-large-1-4 uk-width-medium-1-1 ">
-                <h3 class="p-l-20">Reach Us</h3>
+                <h3 class="p-l-20 brand-c">Reach Us</h3>
                 <ul class="footer-sub-section-3">
                     <li><img src="img/location.svg" width="60" alt="">A-36, Sector 4, Noida, U.P</li>
                     <li><img src="img/mail-us.svg" width="60" alt="">careers@scaledesk.com</li>
@@ -843,6 +875,8 @@ Footer Section
 
 
 </section>
+
+
 
 
 
@@ -909,15 +943,6 @@ Fab Button
 
 
     new WOW().init();
-
-
-
 </script>
-
-
-
-
-
-
 </body>
 </html>
