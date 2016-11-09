@@ -168,13 +168,10 @@ section:first-of-type{
     padding: 0!important;
 }
 
-
-
 @media screen and (max-width: 1150px){
     #header-section{
         height: 70px;
     }
-
     .cd-primary-nav .cd-nav-gallery .cd-nav-item{
         padding-left: 20px;
     }
@@ -462,7 +459,7 @@ section:first-of-type{
 
 .testi-text{
     text-align: center;
-    font-size: 1.9vw;
+    font-size: 20px;
     padding: 6%;
     color: #fff;
 }
@@ -1499,6 +1496,9 @@ Contact us page
 }
 .m-t-80{
     margin-top: 80px !important;
+}
+.m-b-15{
+    margin-bottom: 15px !important;
 }
 
 /*////Ends here///*/

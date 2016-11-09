@@ -18,7 +18,7 @@
 }
 
 .contact-strip{
-    background-color: #525252;;
+    background-color: #21685f;;
     padding: 20px;
 }
 
@@ -196,7 +196,7 @@
 .footer-about{
     font-size: 16px;
     text-align: left !important;
-    line-height: 1.6em;
+    line-height: 1.4em;
     word-spacing: 4px;
 /*    margin-top: 18px;*/
     color:#FFFFFF;
@@ -427,8 +427,38 @@ ul li button.mdal-btn.m-t-20.shrink {
     border-bottom: 2px solid #05c8fa;
     background: transparent;
 }
-
-
+.site-btn{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 35px;
+    color: #FFFFFF;
+}
+.site-block{
+    margin: 15px 0;
+    text-align: center;
+}
+.site-block a{
+    text-decoration: none;
+}
+.site-block a:hover{
+    color:#FFFFFF;
+}
+#zolo{
+    background-color: #673ab7;
+}
+#mandigate{
+    background-color: #469647;
+}
+#shaleena{
+    background-color: #151515;
+}
+.footer-strip{
+    background-color: #FFFFFF;
+    color: #484848;
+}
+.uk-text-user{
+    color: #16425b!important;
+}
 
 
 /*Side navigation for mobile*/
@@ -480,4 +510,23 @@ ul li button.mdal-btn.m-t-20.shrink {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 20%;}
     .sidenav a {font-size: 18px;}
+
+    #typed{
+        font-size: 20px !important;
+    }
+    .typed-cursor {
+        font-size: 20px !important;
+    }
+    .uk-slidenav-position .uk-slidenav-previous {
+        left: -19px;
+    }
+    .uk-slidenav-position .uk-slidenav-next {
+        right: -19px;
+    }
+    .f-22{
+        font-size: 20px !important;
+    }
+    .uk-text-user {
+        font-size: 14px;
+    }
 }
