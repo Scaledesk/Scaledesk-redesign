@@ -23,7 +23,7 @@ $Usersubject="Thank you for contact  us";
 $message ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$phone.
-  'Message:-'.$text.'</div>
+  '<br> Message:-'.$text.'</div>
 
 
 </body>
