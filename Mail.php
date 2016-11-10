@@ -20,6 +20,9 @@ $emailadmin="sanchit2411@gmail.com";
 
 $subject = "Contact Us";
 $Usersubject="Thank you for contact  us";
+
+
+
 $message ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$phone.
@@ -28,6 +31,7 @@ $message ='<html>
 
 </body>
 </html>';
+
 
    
            
@@ -73,9 +77,43 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
 }
 
 else{
-     /* echo json_encode("singh");*/
-    header("location: landingpage.html");
-	/*header("location: index.php");*/
+    
+
+
+$emailadmin="sanchit2411@gmail.com";
+$subject = "Contact Us";
+
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers = "From:hi@scaledesk.com\r\n";
+$headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
+
+
+
+$message ='<html>
+<body>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Phone:-'.$phone.
+  '</div>
+
+
+</body>
+</html>';
+
+
+     if(mail($emailadmin,$subject,$message,$headers)) {
+
+        header("location: thankyou.html");
+
+     }else{
+
+        header("location: landingpage.html");
+
+
+     }
+
+
+
+
+
 }
 
 
