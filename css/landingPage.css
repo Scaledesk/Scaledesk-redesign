@@ -522,6 +522,12 @@ ul li button.mdal-btn.m-t-20.shrink {
   background-color: indianred;
 }
 
+.footer-sub-section-2 input[type="tel"]{
+  width: 75% ;
+  padding: 19px 5px;
+
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #menu-slider {
     transition: margin-left .4s;
