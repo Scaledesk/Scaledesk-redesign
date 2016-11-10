@@ -19,7 +19,7 @@
 
 .contact-strip{
     background-color: grey;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contact-strip .uk-grid .cta-strip-btn{
@@ -30,6 +30,11 @@
     background-color: #fff;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-size: large;
+}
+
+.contact-strip2{
+  padding-left: 5%;
 }
 
 .contact-strip .uk-grid .cta-strip-btn:hover{
@@ -61,6 +66,7 @@
     background-position: 0% 50%;
     height: 666px;
     padding-top: 5%;
+    background-size: cover;
 }
 
 
@@ -392,6 +398,8 @@ ul li button.mdal-btn.m-t-20.shrink {
     border-radius: 50%;
     background-color: #484848;
     display: block;
+    -webkit-filter : none !important;
+    margin-top: 12px;
 }
 
 
@@ -504,6 +512,14 @@ ul li button.mdal-btn.m-t-20.shrink {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.price-container .bg-cb{
+  background-color: darkcyan;
+}
+
+.price-container .bg-ir{
+  background-color: indianred;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
