@@ -18,7 +18,7 @@
 }
 
 .contact-strip{
-    background-color: #21685f;;
+    background-color: grey;
     padding: 20px;
 }
 
@@ -286,7 +286,7 @@
 }
 
 .price-container ul li{
-    line-height: 70px;
+    line-height: 48px;
     border-bottom: 1px solid #eee;
     font-size: 17px;
     color: #999;
@@ -388,6 +388,11 @@ ul li button.mdal-btn.m-t-20.shrink {
 
 
 
+.testi-img{
+    border-radius: 50%;
+    background-color: #484848;
+    display: block;
+}
 
 
 
