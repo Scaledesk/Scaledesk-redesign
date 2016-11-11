@@ -233,7 +233,7 @@
 }
 
 .feature-box p {
-    height: 165px;
+    height: 110px;
     overflow: hidden;
 
 }
@@ -252,6 +252,9 @@
     text-align: center;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    height: 600px;
+    max-height: 600px;
+    overflow: hidden;
 }
 
 .price-container:hover{
@@ -429,7 +432,7 @@ ul li button.mdal-btn.m-t-20.shrink {
     background-color: #f5f5f5;
     padding: 15px;
     font-size: 16px;
-    height: 300px;
+    height: 315px;
     overflow: hidden;
 }
 
@@ -545,10 +548,10 @@ ul li button.mdal-btn.m-t-20.shrink {
         font-size: 20px !important;
     }
     .uk-slidenav-position .uk-slidenav-previous {
-        left: -19px;
+        left: 0;
     }
     .uk-slidenav-position .uk-slidenav-next {
-        right: -19px;
+        right: 0;
     }
     .f-22{
         font-size: 20px !important;
@@ -557,3 +560,4 @@ ul li button.mdal-btn.m-t-20.shrink {
         font-size: 14px;
     }
 }
+

@@ -253,7 +253,7 @@ section:first-of-type{
 
 
 #intro-section .form-group input{
-    font-size: 18px;
+    font-size: 16px;
     color: #484848;
     padding: 25px;
     background-color: #fff;
@@ -270,7 +270,12 @@ section:first-of-type{
     border: none;
     cursor: pointer;
     height: 50px;
+    transition: all .4s ease;
 
+}
+
+#intro-section .form-group .submit-btn:hover{
+    opacity: .9;
 }
 
 /*custom end by garima*/
@@ -1485,6 +1490,10 @@ Contact us page
 
 .m-l-4{
     margin-left:4px;
+}
+
+.m-l-10{
+    margin-left: 10px!important;
 }
 
 .m-l-30{
