@@ -449,25 +449,43 @@ ul li button.mdal-btn.m-t-20.shrink {
     padding: 8px 35px;
     color: #FFFFFF;
 }
+
+
 .site-block{
     margin: 15px 0;
     text-align: center;
 }
+
+
 .site-block a{
     text-decoration: none;
 }
+
+
 .site-block a:hover{
     color:#FFFFFF;
 }
+
+
 #zolo{
     background-color: #673ab7;
 }
+
+
 #mandigate{
     background-color: #469647;
 }
+
+
 #shaleena{
     background-color: #151515;
 }
+
+#rewello{
+    background-color: #5735f1;
+}
+
+
 .footer-strip{
     background-color: #FFFFFF;
     color: #484848;
