@@ -571,6 +571,11 @@ ul li button.mdal-btn.m-t-20.shrink {
     .contact-strip2{
         text-align: center;
     }
+    
+     #header-section{
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2) !important;
+    }
 }
 
 
@@ -599,7 +604,8 @@ ul li button.mdal-btn.m-t-20.shrink {
 }
 
 .d-b span{
-    color: #00a8e6;
+/*    color: #00a8e6;*/
+    color: lightseagreen;
 }
 
 .d-b span i{
