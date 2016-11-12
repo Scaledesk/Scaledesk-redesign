@@ -104,22 +104,26 @@ Header Navigation
         <a class="cd-logo" href="index.html"><img src="img/logo.png" width="150" alt="Logo"></a>
         <ul class="cd-header-buttons">
             <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
-            <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+            <li>
+                <a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a>
+            </li>
         </ul> <!-- cd-header-buttons -->
     </header>
+    
 
-    <main class="cd-main-content"></main>
-    <div class="cd-overlay"></div>
+    <!--<main class="cd-main-content"></main>-->
+    <!--<div class="cd-overlay"></div>-->
 
     <nav class="cd-nav">
         <ul class="uk-nav uk-nav-side cd-primary-nav is-fixed" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+            
             <li><a href="#about-section">Features</a></li>
             <li><a href="#our-services-section">Services</a></li>
             <li><a href="#work-section">Portfolio</a></li>
             <li><a href="#pricing-table">Packages</a></li>
             <li><a href="#our-clients-section">Clients</a></li>
             <li><a href="#contact-form1-section">Contact us</a></li>
-             <li>
+            <li>
                 <a class=" " href="tel:07737115247">
                    <button class="uk-button mdal-btn">
                        <i class="fa fa-phone-square f-16"></i>&nbsp; 07737115247
@@ -128,6 +132,7 @@ Header Navigation
                 </a> 
             </li>
         </ul>
+        
         <!--<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">-->
             <!--<li><a href="#about-section">Features</a></li>-->
             <!--<li><a href="#our-services-section">Services</a></li>-->
@@ -141,7 +146,25 @@ Header Navigation
     <!--------------------->
     <!---------------------------->
 
-    <div class="uk-visible-small">
+     <header class="uk-hidden-medium uk-hidden-large c-width-2 pull-right">
+        
+        <a class="" href="index.html">
+            <img src="img/logo-small.png" width="50" alt="Logo" class="m-custom-header">
+         </a>
+         
+        <ul class="cd-header-buttons">
+            <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
+            <li class="d-b">
+                <a href="tel:07737115247" >
+                    <span><i class="fa fa-phone-square"></i>
+                    
+                    Call Now</span>
+                </a>
+            </li>
+        </ul> <!-- cd-header-buttons -->
+    </header>
+    
+    <div class="uk-visible-small c-width">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about-section">Features</a>
@@ -150,7 +173,7 @@ Header Navigation
             <a href="#pricing-table">Packages</a>
             <a href="#our-clients-section">Clients</a>
             <a href="#contact-form1-section">Contact us</a>
-            <button class="uk-button m-l-30 mdal-btn m-t-20">0987654321</button>
+            <button class="uk-button m-l-30 mdal-btn m-t-20">07737115247</button>
         </div>
 
         <!-- Use any element to open the sidenav -->

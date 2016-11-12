@@ -563,13 +563,54 @@ ul li button.mdal-btn.m-t-20.shrink {
     .intro-section-title h1{
         font-size:  2.7em;
     }
+    
+    #intro-section .intro-section-title div{
+    font-size: 3.4vh;
+    }
+    
+    .contact-strip2{
+        text-align: center;
+    }
 }
+
 
 @media only screen and (min-width: 768px){
     
     .cd-main-header{display: block !important;}
     
+    
 }
+
+
+.c-width{
+    width: 10%;
+}
+
+.c-width-2{
+    width: 90%;
+}
+
+.m-custom-header{
+    margin: 1% 38%;
+}
+
+.d-b{
+    font-size: 15px;
+}
+
+.d-b span{
+    color: #00a8e6;
+}
+
+.d-b span i{
+    display: block !important;
+    text-align: center;
+    margin-top: 6%;
+    font-size: 24px;
+
+}
+
+
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
