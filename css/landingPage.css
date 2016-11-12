@@ -554,6 +554,24 @@ ul li button.mdal-btn.m-t-20.shrink {
     transition: margin-left .4s;
 }
 
+.width-100{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-section-title h1{
+        font-size:  2.7em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+    .cd-main-header{display: block !important;}
+    
+}
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 20%;}
