@@ -48,6 +48,15 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
  {
          
            if(mail($email,$Usersubject,$messageUsers,$headers)){
+           // send message to the user after send email
+           try{
+		include 'send_message.php';
+		$number = $_POST['phone'];
+		$message_local = 'Thank you for choosing ScaleDesk, one of our tech experts will contact you shortly. For any urgent requirement, please call 09599993689. We\'d love to help you!';
+		send_message($number,$message_local);
+	   }catch(Exception $e){
+		// nothing to do
+	  	}
 
             mail($emailsubadmin,$subject,$message,$headers);
       
