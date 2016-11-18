@@ -18,6 +18,7 @@ $text=$_POST['text'];
 
 $emailadmin="sanchit2411@gmail.com";
 $emailsubadmin="lakhani@scaledesk.com";
+$emailother="priyanka@scaledesk.com";
 
 $subject = "Contact Us";
 $Usersubject="Thank you for contact  us";
@@ -59,7 +60,8 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
 	  	}
 
             mail($emailsubadmin,$subject,$message,$headers);
-      
+            mail($emailother,$subject,$message,$headers);
+            
            header("location: thankyou.html");
 
              } 
@@ -92,6 +94,7 @@ else{
 
 $emailadmin="sanchit2411@gmail.com";
     $emailsubadmin="lakhani@scaledesk.com";
+    $emailother="priyanka@scaledesk.com";
 $subject = "Contact Us";
 
 $headers = "MIME-Version: 1.0" . "\r\n";
@@ -113,8 +116,8 @@ $message ='<html>
      if(mail($emailadmin,$subject,$message,$headers)) {
          
          mail($emailsubadmin,$subject,$message,$headers);
- 
-
+         mail($emailother,$subject,$message,$headers);  
+         
         header("location: thankyou.html");
                  
 
