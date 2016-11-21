@@ -18,7 +18,7 @@
 }
 
 .contact-strip{
-    background-color: grey;
+    background-color: #444;
     padding: 10px;
 }
 
@@ -28,18 +28,27 @@
     height: 50px;
     width: 150px;
     background-color: #fff;
+    background-color: #fd6d56;
+    color: #fff;
+    border-radius: 3px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     font-size: large;
 }
 
+.contact-strip span {
+    color: lightskyblue;
+}
+
+/*
 .contact-strip2{
   padding-left: 5%;
 }
+*/
 
 .contact-strip .uk-grid .cta-strip-btn:hover{
-    color: #fff;
-    background-color: #05c8fa;;
+    color: #fd6d56;
+    background-color: #fff ;
 }
 
  .bg-intro {
