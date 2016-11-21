@@ -1,4 +1,32 @@
 
+
+#intro-section .intro-section-title div{
+    margin: auto;
+}
+
+.banner-left{
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.banner-left img{
+    width: 70px;
+    margin-bottom: 7px;
+}
+
+.banner-left span {
+    text-align: center;
+    color: lightsalmon;
+    font-size: 20px;
+    
+    
+}
+
+.banner-left p{
+    line-height: inherit;
+}
+
 .mdal-btn{
     border: 2px solid #05c8fa;;
     color:#05c8fa;
@@ -64,6 +92,13 @@
 
 .f-16{
     font-size: 16px;
+}
+
+.service-bg{
+    background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/162616/coffee-work-desk-mug-keyboard-162616.jpeg') center no-repeat;
+    
+/*     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/7358/startup-photos.jpg') center no-repeat;*/
+    background-size: cover;
 }
 
 
@@ -237,7 +272,7 @@
 }
 
 .intro-section-title h1{
-    font-size: 3.5em;
+    font-size: 2.6em;
     line-height: 1.2em;
 }
 
