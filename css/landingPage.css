@@ -98,6 +98,8 @@
 .service-bg{
     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/162616/coffee-work-desk-mug-keyboard-162616.jpeg') center no-repeat;
     
+    background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('../img/banner-icons/pexel.jpg') center no-repeat;
+    
 /*     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/7358/startup-photos.jpg') center no-repeat;*/
     background-size: cover;
 }
