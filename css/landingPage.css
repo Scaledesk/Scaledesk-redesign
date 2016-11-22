@@ -4,6 +4,11 @@
     margin: auto;
 }
 
+h1{
+    color: aliceblue;
+    color: aliceblue;
+}
+
 .banner-left{
     background: rgba(0,0,0,0.4);
     border-radius: 5px;
@@ -354,6 +359,9 @@
 }
 
 
+.p-t-0{
+    padding-top: 0px !important;
+}
 
 
 
@@ -532,6 +540,9 @@ ul li button.mdal-btn.m-t-20.shrink {
     background-color: #5735f1;
 }
 
+#services-section{
+    background-color: #f1f1f1;
+}
 
 .footer-strip{
     background-color: #FFFFFF;
