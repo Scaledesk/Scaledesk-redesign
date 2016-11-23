@@ -15,7 +15,7 @@ $emailadmin2="priyanka@scaledesk.com";
 $emailsubadmin="lakhani@scaledesk.com";
 $namefrom=$_POST['pagefrom'];
 $subject = "Contact Us";
-$Usersubject="Thank you for contact  us";
+$Usersubject="Thank You for contacting Scaledesk";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
@@ -43,7 +43,7 @@ $mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
 //$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
-$mail->setFrom('hi@scaledesk.com', 'Scaledesk');
+$mail->setFrom('hi@scaledesk.com', 'Scaledesk Web Studio');
 //$mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo('hi@scaledesk.com', 'noreply');
 // TCP port to connect to
@@ -64,7 +64,7 @@ $mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
 //$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
-$mail1->setFrom('hi@scaledesk.com', 'Scaledesk');
+$mail1->setFrom('hi@scaledesk.com', 'Scaledesk Web Studio');
 //$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail->addAddress($email, $name);     // Add a recipient
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
