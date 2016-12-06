@@ -1459,8 +1459,8 @@ Fab Button
             <p class="form-notice">*Conditipns Apply</p>
           
 
-          <form>
-            <input type="text" placeholder="Enter your email ID">
+          <form action="PHPMailer/MailFunction.php" method="POST">
+            <input type="text" name="popupEmail" placeholder="Enter your email ID" maxlength="30">
             <input type="submit" value="Receive a Callback">
             <p class="form-notice">Please enter valid email ID</p>
           </form>

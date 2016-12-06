@@ -6,6 +6,7 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $name=$_POST['name'];
 $text=$_POST['text'];
+$popupEmail=$_POST['popupEmail'];
 /* $email=$_POST['email'];
 $phone=$_POST['phone'];
 $name=$_POST['first_name'];
@@ -25,6 +26,12 @@ $message ='<html>
 $phoneMessage ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"><br>Phone:-'.$phone.'</div>
+</body>
+</html>';
+
+$popupMessage ='<html>
+<body>
+<div id="abcd" style="text-align:justify;font-size:18px;"><br>Phone:-'.$popupEmail.'</div>
 </body>
 </html>';
 /*$mail->isSMTP();                                      // Set mailer to use SMTP
@@ -70,7 +77,7 @@ $mail->addAddress($email, $name);     // Add a recipient
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
 $mail1->addAddress($emailadmin2);     // Admin mail
-/*$mail1->addAddress($emailsubadmin);*/  // sub admin mail
+$mail1->addAddress($emailsubadmin);  // sub admin mail
 $mail->Subject = $Usersubject;
 $mail->Body    = $messageUsers;
 $mail1->Subject = $subject;
@@ -78,6 +85,21 @@ $mail1->Body    = $message;
 /*    echo "<pre/>";
     print_r($mail1);die;
 */
+
+  if(isset($popupEmail)){
+    $mail1->Body    = $popupMessage;
+   if($mail1->send()){
+              header("location: ../thankyou.html");
+            }else{
+                /*echo "string2222";
+                die();*/
+                header("location: ../index.html");
+            }
+
+  }
+
+
+
 if(!empty($email)){
    
 if(!$mail1->send())
