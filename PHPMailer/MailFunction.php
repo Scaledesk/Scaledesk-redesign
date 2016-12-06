@@ -29,9 +29,12 @@ $phoneMessage ='<html>
 </body>
 </html>';
 
+
+
+$Popupsubject="Ecomm - Exit Intent Modal Form";
 $popupMessage ='<html>
 <body>
-<div id="abcd" style="text-align:justify;font-size:18px;"><br>Phone:-'.$popupEmail.'</div>
+<div id="abcd" style="text-align:justify;font-size:18px;"><br>Phone/Email - :-'.$popupEmail.'</div>
 </body>
 </html>';
 /*$mail->isSMTP();                                      // Set mailer to use SMTP
@@ -86,17 +89,7 @@ $mail1->Body    = $message;
     print_r($mail1);die;
 */
 
-  if(isset($popupEmail)){
-    $mail1->Body    = $popupMessage;
-   if($mail1->send()){
-              header("location: ../thankyou.html");
-            }else{
-                /*echo "string2222";
-                die();*/
-                header("location: ../index.html");
-            }
-
-  }
+  
 
 
 
@@ -116,6 +109,22 @@ if(!$mail1->send())
             }
       }
 }else{
+     
+
+       if(isset($popupEmail)){
+              $mail1->Subject =$Popupsubject;
+            $mail1->Body    = $popupMessage;
+           if($mail1->send()){
+                      header("location: ../thankyou.html");
+                    }else{
+                        /*echo "string2222";
+                        die();*/
+                        header("location: ../index.html");
+                    }
+
+      }else{
+
+
      $mail1->Subject = $subject;
      $mail1->Body    = $phoneMessage;
         if($mail1->send()){
@@ -125,4 +134,6 @@ if(!$mail1->send())
                 die();*/
                 header("location: ../index.html");
             }
+
+          }
 }
