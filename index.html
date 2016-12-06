@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="css/slideshow.min.css">
     <link rel="stylesheet" href="css/slidenav.css">
     <link rel="stylesheet" href="css/animate.css">
+    
+     <link rel="stylesheet" href="css/ouibounce.min.css">
     <link rel="stylesheet" href="css/main.css">
+   
     <link rel="stylesheet" href="css/landingPage.css">
     <link rel="icon" href="img/favicon.png">
 
@@ -1433,13 +1436,81 @@ Fab Button
 
 
 <!--Back to top-->
+    
 
 <a href="#0" class="cd-top">To Top</a>
+    
+     <!-- OuiBounce Modal -->
+    <div id="ouibounce-modal">
+      <div class="underlay"></div>
+      <div class="modal">
+        <div class="modal-title">
+          <h3> <i class="fa fa-bullhorn c-white"></i>&nbsp; &nbsp;One Time Offer for you ! </h3>
+        </div>
+
+        <div class="modal-body">
+          <p class="f-16">Hi, <br> As you have visited Scaledesk's Website for the first time we would like to offer you a <span class="f-color">Introductory Offer </span> ! </p>
+          <p class="f-16 uk-text-center m-b-5">The offer includes Website Development with : </p>
+          <p class="f-16"><i class="fa fa-server uk-text-primary"></i> <b>Free</b> 1 Year Hosting </p>
+          <p class="f-16"><i class="fa fa-comment-o uk-text-success"></i> <b>Free</b> Technical Consulting over Call </p>
+          <p class="f-16"><i class="fa fa-line-chart uk-text-warning"></i> <b>Free</b> Google Analytics    </p>
+          <p class="f-16"><i class="fa fa-ticket f-color"></i> <b>Free</b> 3 Months Support </p>
+            
+            <p class="form-notice">*Conditipns Apply</p>
+          
+
+          <form>
+            <input type="text" placeholder="Enter your email ID">
+            <input type="submit" value="Receive a Callback">
+            <p class="form-notice">Please enter valid email ID</p>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <p>no thanks</p>
+        </div>
+      </div>
+    </div>
+    
+<!--    Ouibounce Modal End -->
+
 
 
 <script src="js/main.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/wow.min.js"></script>
+    
+<!--    OUIbounce exit intent popup JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js">
+    </script>
+    
+    
+ <script>
+
+      // if you want to use the 'fire' or 'disable' fn,
+      // you need to save OuiBounce to an object
+      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!'); }
+      });
+
+      $('body').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal-footer').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal').on('click', function(e) {
+        e.stopPropagation();
+          
+          
+      });
+    </script>
+
 
 
 
