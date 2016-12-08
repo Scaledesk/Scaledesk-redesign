@@ -25,8 +25,8 @@ h1{
     text-align: center;
     color: lightsalmon;
     font-size: 20px;
-    
-    
+
+
 }
 
 .banner-left p{
@@ -102,9 +102,9 @@ h1{
 
 .service-bg{
     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/162616/coffee-work-desk-mug-keyboard-162616.jpeg') center no-repeat;
-    
+
     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('../img/banner-icons/pexel.jpg') center no-repeat;
-    
+
 /*     background: linear-gradient(rgba( 0,0,0, 0.5 ), rgba(0,0,0,0.5 ) ) , url('https://static.pexels.com/photos/7358/startup-photos.jpg') center no-repeat;*/
     background-size: cover;
 }
@@ -279,15 +279,16 @@ h1{
 
 }
 
-.intro-section-title h1{
+.intro-section-title h2{
     font-size: 2.6em;
     line-height: 1.2em;
+    color: #fff;
 }
 
 .b-card{
     box-shadow: 1px 0px 0px #eee;
     background: #fefefe;
-    
+
 }
 
 .service-img > img{
@@ -639,27 +640,27 @@ ul li button.mdal-btn.m-t-20.shrink {
     .intro-section-title h1{
         font-size:  2.7em;
     }
-    
+
     #intro-section .intro-section-title div{
     font-size: 3.4vh;
     }
-    
+
     .contact-strip2{
         text-align: center;
     }
-    
+
      #header-section{
-        
+
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2) !important;
     }
 }
 
 
 @media only screen and (min-width: 768px){
-    
+
     .cd-main-header{display: block !important;}
-    
-    
+
+
 }
 
 
@@ -681,7 +682,7 @@ ul li button.mdal-btn.m-t-20.shrink {
 
 .d-b span{
 /*    color: #00a8e6;*/
-    color: lightseagreen;   
+    color: lightseagreen;
 }
 
 .d-b span i{
